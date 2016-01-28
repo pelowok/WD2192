@@ -1,0 +1,737 @@
+/* taken straight from hubspot  : http://cdn2.hubspot.net/hub/120076/file-2474173293-css/control_now/css/old_style_2.cs */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+    display: block;
+    border: 1px solid #999;
+    height: 13px;
+    padding: 2px 2px;
+    margin: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+/* Style IDs */
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font: 17px "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/*#header {*/
+    /*height: 95px;*/
+    /*width: 1022px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2387863630-png/control_now/controlemail/meo/top-shadow.png) repeat-x bottom;*/
+    /*position: relative;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+#cloudLogo {
+    /*background: url(../img/cloudLogo.png) no-repeat;*/
+    width: 88px;
+    height: 55px;
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+#cloudLogo a {
+    padding-bottom: 40px;
+    padding-right: 85px;
+    text-decoration: none;
+}
+
+#headerMenu {
+    float: right;
+}
+
+#headerMenu a, #footerMenu a {
+    color: #455668;
+    text-decoration: none;
+}
+
+#headerMenu a:hover, #footerMenu a:hover {
+    text-decoration: underline;
+}
+
+.contactInfo {
+    position: absolute;
+    float: right;
+    right: 34px;
+    bottom: 35px;
+    margin: 0;
+}
+
+#banner{
+    width:1024px;
+    height:264px;
+    position:relative;
+}
+#banner-copy{
+    position:absolute;
+    left:20px;
+    top:60px;
+}
+
+#banner-copy h1{
+    font-size:32px;
+    margin:0px;
+    color:#0079C1;
+}
+
+#banner-copy p{
+    font-size:30px;
+    margin:0px;
+    color:#000;
+}
+
+#body {
+    width: 1023px;
+}
+
+#bodyTop {
+
+    height: 11px;
+}
+
+#bodyBottom {
+
+    height: 33px;
+}
+
+#bodyMid {
+
+    height: 600px;
+    font-size: 16px;
+}
+
+#bodyMidLeft {
+    float: left;
+    width: 590px;
+    margin-left: 10px;
+    padding-left: 14px;
+    color: #465669;
+    position:relative;
+}
+
+#bodyMidRight {
+    float: right;
+    width: 348px;
+}
+
+#TYbodyMidRight {
+    float: right;
+    width: 348px;
+    position: absolute;
+    right: 32px;
+    z-index: 1;
+    top: -90px;
+}
+
+#bodyMidLeft h1 {
+    color: #0079c1;
+    font-weight: normal;
+    font-size: 32px;
+    padding-top: 30px;
+}
+
+#bodyMidLeft table {
+    font-size: 14px;
+}
+
+/*#awardlogo {*/
+    /*height: 90px;*/
+    /*width: 107px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2482275962-gif/control_now/images/award.gif) no-repeat;*/
+    /*position:absolute;*/
+    /*right:-256px;*/
+    /*bottom:5px;*/
+/*}*/
+
+/*#awardlogos {*/
+    /*height: 111px;*/
+    /*width: 199px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2481928630-gif/control_now/images/csa-vb100.gif) no-repeat;*/
+    /*position:absolute;*/
+    /*right:-50px;*/
+    /*bottom:-15px;*/
+/*}*/
+
+/*#awardWrapper {*/
+    /*height: 99px;*/
+    /*width: 621px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2482296047-png/control_now/images/award.png) no-repeat;*/
+    /*margin-top: 45px;*/
+/*}*/
+
+/*#awardWrappersm {*/
+    /*height: 99px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2403761003-png/control_now/images/award_sm.png) no-repeat;*/
+    /*margin-top: 34px;*/
+    /*width:394px*/
+/*}*/
+
+#awardText {
+    color: #0079c1;
+    margin-left: 38px;
+    font-size: 19px;
+    font-style: italic;
+    padding-top: 15px;
+    padding-left:10px;
+}
+
+#awardTextSource {
+    font-size: 10px;
+    margin-left: 325px;
+    padding-top: 10px;
+}
+
+#formTop {
+
+    height: 92px;
+}
+
+#formTop-TY {
+
+    height: 190px;
+}
+
+#formName-TY {
+    padding-top: 120px;
+    text-align: center;
+    color: #0079C1;
+    font-size: 23px;
+    /*text-shadow: black 0.1em 0.1em 0.5em;*/
+}
+
+#formBottom {
+    height: 9px;
+}
+
+#formMid {
+    color: #fff;
+    height: 590px;
+    position: absolute;
+    z-index: 1;
+    right: 75px;
+    top: 20px;
+
+}
+
+#formMid-TY {
+    color: #fff;
+    height: 452px;
+}
+
+.formbg-wrapper{
+    position: relative;
+
+}
+
+/*.formbg{*/
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2482356342-png/control_now/images/formImage.png);*/
+    /*background-repeat: no-repeat;*/
+    /*height: 630px;*/
+    /*width: 345px;*/
+    /*position: absolute;*/
+    /*top: -60px;*/
+    /*right: 40px;*/
+/*}*/
+
+/*.formbg2{*/
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2475499626-png/control_now/images/formImage2.png);*/
+    /*background-repeat: no-repeat;*/
+    /*height: 630px;*/
+    /*width: 345px;*/
+    /*position: absolute;*/
+    /*top: -60px;*/
+    /*right: 40px;*/
+/*}*/
+
+/*.formbg_bot{*/
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2475499651-gif/control_now/images/form-bot.gif);*/
+    /*background-repeat: no-repeat;*/
+    /*width: 333px;*/
+    /*height: 28px;*/
+    /*position: relative;*/
+    /*top: 93px;*/
+    /*right: 23px*/
+/*}*/
+
+/*.formbg_top{*/
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2482296142-png/control_now/images/form_top.png);*/
+    /*background-repeat: no-repeat;*/
+    /*width: 333px;*/
+    /*height: 522px;*/
+    /*position: absolute;*/
+    /*top: -80px;*/
+    /*right: -40px;*/
+    /*z-index:-1;*/
+/*}*/
+
+/*.formbgTY{*/
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2403766048-png/control_now/images/formImageTY.png);*/
+    /*background-repeat: no-repeat;*/
+    /*height: 630px;*/
+    /*width: 345px;*/
+    /*position: absolute;*/
+    /*top: -60px;*/
+    /*right: 40px;*/
+/*}*/
+
+/*#shareBubble {*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2410354917-png/control_now/images/shareBubble_sm.png) no-repeat;*/
+    /*height: 206px;*/
+    /*width:372px;*/
+    /*color: #394555;*/
+    /*margin-left: 4px;*/
+    /*text-align: center;*/
+    /*padding-top: 5px;*/
+    /*margin-top: -55px;*/
+/*}*/
+
+#shareBubbleText {
+    margin-left: -25px;
+    font-weight: bold;
+    font-size:14px;
+    margin-top: 50px;
+}
+
+#shareBubbleText a {
+    text-decoration: none;
+    color: #0079c1;
+}
+
+#shareBubbleText a:hover {
+    text-decoration: underline;
+}
+
+#shareText {
+    margin-left: 45px;
+    font-style: italic;
+    font-size: 16px;
+    color:#0079C1;
+}
+
+#shareButtons {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#shareButtons img {
+    border: 0;
+}
+
+#formSub {
+    text-align: center;
+    font-weight: bold;
+    position:absolute;
+    top:-62px;
+    left:12px;
+}
+
+#formSub p{
+    font-size:23px;
+    margin:0px;
+    color:#fff;
+}
+
+#formSub-TY {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color:#0079C1;
+}
+
+#passwordHint{
+    height:26px;
+    left: -207px;
+    position: absolute;
+    display:none;
+
+}
+#passwordInner{
+    float:left;
+    height:26px;
+    background-color: #fc9826;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#formFields {
+
+    text-align: center;
+    width:255px;
+}
+
+#formFields-TY {
+    text-align: center;
+
+    height: 76px;
+}
+
+#formFields input[type=text], #formFields input[type=password] {
+    color: #465669;
+    padding-left: 5px;
+    margin-bottom: 8px;
+    width: 230px;
+    height: 20px;
+}
+
+#formFields select {
+    color: #465669;
+    padding-left: 1px;
+    margin-bottom: 8px;
+    width: 239px;
+    height: 25px;
+}
+
+#formFields input[type=checkbox] {
+    border:none;
+    float:left;
+    margin-top: -2px;
+}
+
+#formServices, #formInfo, #formRequired {
+    text-align: left;
+    font-size: 12px;
+    color:#666666;
+    width:245px;
+    padding-left:5px;
+    line-height:11px;
+}
+
+#formServices strong {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#formInfo {
+    padding-top: 20px;
+    display: none;
+}
+
+#formRequired {
+    padding-top: 20px;
+}
+
+/*#submit-button {*/
+    /*cursor: pointer;*/
+    /*float: right;*/
+    /*padding-right: 17px;*/
+    /*position: absolute;*/
+    /*left: 89px;*/
+    /*top: 480px;*/
+    /*z-index: 1;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2407208438-gif/control_now/images/Try_Now_btn-test.gif);*/
+    /*display: block;*/
+    /*width: 138px;*/
+    /*height: 43px;*/
+/*}*/
+
+#submit-button:hover{
+    background-position: 0 -43px;
+}
+
+
+
+#footer {
+    color: #455668;
+    padding-top: 5px;
+    font-size: 11px;
+    padding-bottom:30px;
+    width:1022px;
+    font-size: 11px;
+}
+
+#copyright {
+    float: left;
+}
+
+/* social proofing */
+
+/*.leftQuote{*/
+    /*width:20px;*/
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2408695699-png/control_now/images/left-quote.png) no-repeat top;*/
+    /*height:16px;*/
+    /*display:block;*/
+    /*position:absolute;*/
+    /*margin-top: 3px;*/
+/*}*/
+/*.rightQuote{*/
+    /*width:20px;*/
+    /*height:16px;*/
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2408695719-png/control_now/images/right-quote.png) no-repeat top;*/
+    /*position: absolute;*/
+    /*float: left;*/
+    /*margin-top: 9px;*/
+/*}*/
+.awardText {
+    color: #0079c1;
+    font-size: 19px;
+    font-style: italic;
+    margin-left:30px;
+}
+.awardAuthor{
+    float:right;
+    margin-right:40px;
+    margin-top:10px;
+    color:#0079c1;
+}
+/*#footer-proofing{*/
+    /*border-bottom:thin solid #c8cac9;*/
+    /*border-top:thin solid #c8cac9;*/
+    /*width:1022px;*/
+    /*margin:20px 0 20px 0;*/
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2482721234-png/control_now/images/bg-social-proofing.png) repeat-x top;*/
+    /*display:table;*/
+    /*position:relative*/
+/*}*/
+#footer-proofing-right{
+    width:428px;
+    display:table-cell;
+    float:left;
+    padding-right:20px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+#footer-proofing-left{
+    width:526px;
+    height:100%;
+    display:table;
+    float:left;
+    padding:24px;
+    vertical-align:middle
+}
+#footer-proofing-content{
+    display:table;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+#footerMenu {
+    float: right;
+    width:520px;
+    color: #455668;
+    font-size: 11px;
+}
+
+
+
+/* Style Classes */
+.signup-red {
+    font-size: 12px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.formError {
+    border: solid 1px red;
+}
+
+.errHilite {
+    border: solid 1px red;
+}
+
+/*.bodyMidSep {*/
+    /*width: 517px;*/
+    /*height: 19px;*/
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2406173026-png/control_now/images/bodyMidSep.png) no-repeat;*/
+/*}*/
+
+.check, .checkText {
+    float: left;
+    color: #0079c1;
+    font-weight: bold;
+}
+
+.checkRight {
+    padding-left: 60px;
+}
+
+.moreInfo {
+    cursor: pointer;
+}
+
+.land{ position:relative;left:70px;}
+
+.lrn-more{text-align:center;padding-bottom:15px;}
+
+.patchVid {width:40%;
+    display:block;
+    float:right;
+    clear:left;
+    padding-left:20px;
+    font-size:14px;
+    text-align:center;
+}
+
+.patchVid p strong {color: #99cc33;}
+
+/* Style Browser Hacks */
+input::-webkit-input-placeholder {color: #465669;}
+input:-moz-placeholder {color: #465669;}
+input:-ms-input-placeholder {color: #465669;}
+
+/* template specific additions */
+/*#cloudLogo {*/
+    /*background: url(http://trials.controlnow.com/hs-fs/hub/120076/file-2408006855-png/control_now/images/controlnow-logo.png) no-repeat;*/
+    /*width: 240px;*/
+    /*height: 40px;*/
+    /*position: absolute;*/
+    /*top: 35px;*/
+    /*left: 20px;*/
+/*}*/
+
+#cloudLogo a {
+    padding-right: 240px;
+}
+
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+}
+
+input, select {
+    vertical-align: middle;
+    display: block;
+    border: 1px solid #999;
+    height: 13px;
+    padding: 2px 2px;
+    margin: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#formFields input[type=text], #formFields input[type=password] {
+    color: #465669;
+    padding-left: 5px;
+    margin-bottom: 8px;
+    width: 230px;
+    height: 20px;
+}
+
+#header {
+    z-index: 0;
+}
+
+#formSub {
+    font-weight: bold;
+}
+
+#bodyMidRight {
+    font: 17px "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}

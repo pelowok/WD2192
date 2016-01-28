@@ -1,0 +1,194 @@
+#header {
+    height: 95px;
+    width: 1022px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/top_shadow.png) repeat-x bottom;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2387863630-png/control_now/controlemail/meo/top-shadow.png) repeat-x bottom;*/
+    position: relative;
+    margin: 0 auto;
+}
+
+#awardlogo {
+    height: 90px;
+    width: 107px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/award.gif) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2482275962-gif/control_now/images/award.gif) no-repeat;*/
+    position:absolute;
+    right:-256px;
+    bottom:5px;
+}
+
+#awardlogos {
+    height: 111px;
+    width: 199px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/csa-vb100.gif) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2481928630-gif/control_now/images/csa-vb100.gif) no-repeat;*/
+    position:absolute;
+    right:-50px;
+    bottom:-15px;
+}
+
+#awardWrapper {
+    height: 99px;
+    width: 621px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/award.png) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2482296047-png/control_now/images/award.png) no-repeat;*/
+    margin-top: 45px;
+}
+
+#awardWrappersm {
+    height: 99px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/award_sm.png) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2403761003-png/control_now/images/award_sm.png) no-repeat;*/
+    margin-top: 34px;
+    width:394px
+}
+
+.formbg{
+    background-image: url(http://pages.logicnow.com/rs/356-UVH-403/images/formImage.png);
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2482356342-png/control_now/images/formImage.png);*/
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 345px;
+    position: absolute;
+    top: -60px;
+    right: 40px;
+}
+
+.formbg2{
+    background-image: url(http://pages.logicnow.com/rs/356-UVH-403/images/formImage2.png);
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2475499626-png/control_now/images/formImage2.png);*/
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 345px;
+    position: absolute;
+    top: -60px;
+    right: 40px;
+}
+
+.formbg_bot{
+    background-image: url(http://pages.logicnow.com/rs/356-UVH-403/images/form-bot.gif);
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2475499651-gif/control_now/images/form-bot.gif);*/
+    background-repeat: no-repeat;
+    width: 333px;
+    height: 28px;
+    position: relative;
+    top: 93px;
+    right: 23px
+}
+
+.formbg_top{
+    background-image: url(http://pages.logicnow.com/rs/356-UVH-403/images/form_top.png);
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2482296142-png/control_now/images/form_top.png);*/
+    background-repeat: no-repeat;
+    width: 333px;
+    height: 522px;
+    position: absolute;
+    top: -80px;
+    right: -40px;
+    z-index:-1;
+}
+
+.formbgTY{
+    background-image: url(http://pages.logicnow.com/rs/356-UVH-403/images/formImageTY.png);
+    /*background-image: url(http://cdn2.hubspot.net/hub/120076/file-2403766048-png/control_now/images/formImageTY.png);*/
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 345px;
+    position: absolute;
+    top: -60px;
+    right: 40px;
+}
+
+#shareBubble {
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/shareBubble_sm.png) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2410354917-png/control_now/images/shareBubble_sm.png) no-repeat;*/
+    height: 206px;
+    width:372px;
+    color: #394555;
+    margin-left: 4px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -55px;
+}
+
+#submit-button {
+    cursor: pointer;
+    float: right;
+    padding-right: 17px;
+    position: absolute;
+    left: 89px;
+    top: 480px;
+    z-index: 1;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/Try_Now_btn-test.gif);
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2407208438-gif/control_now/images/Try_Now_btn-test.gif);*/
+    display: block;
+    width: 138px;
+    height: 43px;
+}
+
+.leftQuote{
+    width:20px;
+    background:url(http://pages.logicnow.com/rs/356-UVH-403/images/left-quote.png) no-repeat top;
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2408695699-png/control_now/images/left-quote.png) no-repeat top;*/
+    height:16px;
+    display:block;
+    position:absolute;
+    margin-top: 3px;
+}
+.rightQuote{
+    width:20px;
+    height:16px;
+    background:url(http://pages.logicnow.com/rs/356-UVH-403/images/right-quote.png) no-repeat top;
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2408695719-png/control_now/images/right-quote.png) no-repeat top;*/
+    position: absolute;
+    float: left;
+    margin-top: 9px;
+}
+
+#footer-proofing{
+    border-bottom:thin solid #c8cac9;
+    /*border-top:thin solid #c8cac9;*/
+    width:1022px;
+    margin:20px 0 20px 0;
+    background:url(http://pages.logicnow.com/rs/356-UVH-403/images/top_shadow.png) repeat-x top;
+    /*background:url(http://cdn2.hubspot.net/hub/120076/file-2482721234-png/control_now/images/bg-social-proofing.png) repeat-x top;*/
+    display:table;
+    position:relative
+}
+
+.bodyMidSep {
+    width: 517px;
+    height: 19px;
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/bodyMidSep.png) no-repeat;
+    /*background: url(http://cdn2.hubspot.net/hub/120076/file-2406173026-png/control_now/images/bodyMidSep.png) no-repeat;*/
+}
+
+#cloudLogo {
+    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/max-bylogicnow-logo.png) no-repeat;
+    /*background: url(http://trials.controlnow.com/hs-fs/hub/120076/file-2408006855-png/control_now/images/controlnow-logo.png) no-repeat;*/
+    background-size: 120px auto;
+    width: 240px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+#banner-copy h1 {
+    font-size: 32px;
+    margin: 0px;
+    color: #0079C1;
+    font-weight: bold;
+    font-family:"myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#footer-proofing-right {
+    width: auto;
+}
+.formbg {
+    top: -140px;
+    background-size: cover;
+    width: 368px;
+}
+#formMid{
+    right: 84px;
+}

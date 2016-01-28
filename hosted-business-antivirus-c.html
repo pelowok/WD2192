@@ -7,33 +7,38 @@
 
     <!-- VARIABLE DECLARATION GOES HERE-->
 
-    <link rel="shortcut icon" href="https://d2zkoeby40ms73.cloudfront.net/sites/controlnow/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" href="https://d2zkoeby40ms73.cloudfront.net/sites/controlnow/files/favicon_1.ico"
+          type="image/vnd.microsoft.icon"/>
     <script src="//cdn.optimizely.com/js/2179121030.js"></script>
 
     <!-- TypeKit -->
     <script src="https://use.typekit.net/pcv5rqq.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <!--<script type="text/javascript" src="http://www.gfi.com/template/js/smartleads.js"></script> -->
     <!--{% if widget_data.rum_include.value %}-->
     <script src="//rum.monitis.com/get/jsbenchmark.min.js?id=5008" type="text/javascript" async></script>
     <!--{% endif %}-->
 
     <script>
-        $(document).ready(function() {
-            $.get( "https://www.maxfocus.com/geo/country", function( data ) {
+        $(document).ready(function () {
+            $.get("https://www.maxfocus.com/geo/country", function (data) {
                 $("#country").val(data);
                 $("#country").trigger("change");
-                if(data == "US"){
-                    $.get( "https://www.maxfocus.com/geo/region", function( data ) {
-                        regionCode = "US-"+data;
+                if (data == "US") {
+                    $.get("https://www.maxfocus.com/geo/region", function (data) {
+                        regionCode = "US-" + data;
                         $("#state").val(regionCode);
                     });
                 }
-                if(data == "CA"){
-                    $.get( "https://www.maxfocus.com/geo/region", function( data ) {
-                        regionCode = "CA-"+data;
+                if (data == "CA") {
+                    $.get("https://www.maxfocus.com/geo/region", function (data) {
+                        regionCode = "CA-" + data;
                         $("#state").val(regionCode);
                     });
                 }
@@ -42,15 +47,15 @@
             optIn();
         });
 
-        function geoip_country_code(){
+        function geoip_country_code() {
             //alert (window.country_code);
         }
 
-        function geoip_country_name(){
+        function geoip_country_name() {
             //alert (window.country_name);
         }
 
-        function geoip_city(){
+        function geoip_city() {
             //alert (window.country_name);
         }
 
@@ -98,7 +103,8 @@
     </script>
 
     <!-- Style -->
-    <link rel="stylesheet" href="http://cdn2.hubspot.net/hub/120076/file-2474173293-css/control_now/css/old_style_2.cs"  />
+    <link rel="stylesheet"
+          href="http://cdn2.hubspot.net/hub/120076/file-2474173293-css/control_now/css/old_style_2.cs"/>
     <!--[if IE 7]>
     <style>
         .checkText {
@@ -109,13 +115,17 @@
     <!-- Javascript -->
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726915-js/control_now/js/jQuery.dPassword.js"></script>
-    <script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2400150909-js/control_now/js/jquery.placeholder.js"></script>
-    <script type="text/javascript" src="http://cdn2.hubspot.net/hub/120076/file-2098488177-js/control_now/js/utils.js"></script>
-    <script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726870-js/control_now/js/form.js"></script>
-    <script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726910-js/control_now/js/gaclientid.js"></script>
+    <script type="text/javascript"
+            src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726915-js/control_now/js/jQuery.dPassword.js"></script>
+    <script type="text/javascript"
+            src="http://trials.controlnow.com/hs-fs/hub/120076/file-2400150909-js/control_now/js/jquery.placeholder.js"></script>
+    <script type="text/javascript"
+            src="http://cdn2.hubspot.net/hub/120076/file-2098488177-js/control_now/js/utils.js"></script>
+    <script type="text/javascript"
+            src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726870-js/control_now/js/form.js"></script>
+    <script type="text/javascript"
+            src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726910-js/control_now/js/gaclientid.js"></script>
 
     <style>
         #cloudLogo {
@@ -133,17 +143,25 @@
     </style>
 
 
-
 </head>
 <body>
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M3ZJJ3"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M3ZJJ3');</script>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-M3ZJJ3"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-M3ZJJ3');</script>
 <!-- End Google Tag Manager -->
 
 <!--BEGIN {{ widget_data.main_body.value }}-->
@@ -154,31 +172,49 @@
 
 
     </div>
-    <div id="body"><div id="banner" style="background: url(../template-new/img/blank-hero.jpg); width:1022px; height:265px; margin-left:1px">
-        <span style="position: absolute; left:345px; top:-65px; z-index:1"><img src="http://trials.gficloud.com/land/template-new/img/new-fix-issues-sticker.png" width="150"></span>
-        <div id="banner-copy">
-            <h1>Hosted Business Antivirus</h1>
+    <div id="body">
+        <div id="banner"
+             style="background: url(../template-new/img/blank-hero.jpg); width:1022px; height:265px; margin-left:1px">
+            <span style="position: absolute; left:345px; top:-65px; z-index:1"><img
+                    src="http://trials.gficloud.com/land/template-new/img/new-fix-issues-sticker.png"
+                    width="150"></span>
+
+            <div id="banner-copy">
+                <h1>Hosted Business Antivirus</h1>
   <span style="font-size: 27px; color: #333333; ">Protect your company's network<br>
   against viruses and other malware</span>
-            <br>
-            <br>
-            <h1><span style="color:#333333; font-weight:normal;font-size:27px">Start your <span style="color:#8bc53f"><strong>FREE </strong></span>trial today</span></h1>
+                <br>
+                <br>
+
+                <h1><span style="color:#333333; font-weight:normal;font-size:27px">Start your <span
+                        style="color:#8bc53f"><strong>FREE </strong></span>trial today</span></h1>
+            </div>
+            <div style="position:absolute; right:-3px; bottom:-17px"><img
+                    src="http://trials.gficloud.com/land/template-new/img/antivirus.png"></div>
         </div>
-        <div style="position:absolute; right:-3px; bottom:-17px"><img src="http://trials.gficloud.com/land/template-new/img/antivirus.png"></div>
-    </div>
         <div id="bodyMid" style="height:450px">
             <style>
-                #bodyMid { height: 700px; padding-bottom:30px; }
-                #formMid { height: auto; }
-                #formMid-TY { height: 510px; }
-                .list{
-                    color:#666666;
-                    font-size:16px;
+                #bodyMid {
+                    height: 700px;
+                    padding-bottom: 30px;
+                }
+
+                #formMid {
+                    height: auto;
+                }
+
+                #formMid-TY {
+                    height: 510px;
+                }
+
+                .list {
+                    color: #666666;
+                    font-size: 16px;
                     font-family: "myriad-pro" "Trebuchet MS", Arial, Helvetica, sans-serif;
                     background: url(http://trials.gficloud.com/land/template-new/img/bullet.png) no-repeat 0px 4px;
-                    list-style:none;
-                    margin-bottom:10px;
-                    padding-left:20px;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    padding-left: 20px;
                 }
             </style>
             <div id="bodyMidLeft">
@@ -186,386 +222,445 @@
                     <p>Start protecting your business with ControlNow antivirus in less than 10 minutes:</p>
 
 
-                    <br />
+                    <br/>
                     <ul style="padding-left:20px">
-                        <li class="list"><span style="color:#0079C1;"><strong>Real-time protection against viruses,</strong></span> without slowing down your PCs.</li>
-                        <li class="list"><span style="color:#0079C1;"><strong>Easily manage server and network security anytime,</strong></span> from anywhere.</li>
-                        <li class="list"><span style="color:#0079C1;"><strong>Install and scan on the endpoint</strong></span> so no sensitive data leaves the network.</li>
-                        <li class="list"><span style="color:#0079C1;"><strong>Easy removal of existing antivirus </strong></span> software to avoid conflicts.</li>
-                        <li class="list"><span style="color:#0079C1;"><strong>Hosted antivirus </strong></span> means there's no need to invest in new hardware.</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>Real-time protection against
+                            viruses,</strong></span> without slowing down your PCs.
+                        </li>
+                        <li class="list"><span style="color:#0079C1;"><strong>Easily manage server and network security
+                            anytime,</strong></span> from anywhere.
+                        </li>
+                        <li class="list"><span style="color:#0079C1;"><strong>Install and scan on the endpoint</strong></span>
+                            so no sensitive data leaves the network.
+                        </li>
+                        <li class="list"><span style="color:#0079C1;"><strong>Easy removal of existing
+                            antivirus </strong></span> software to avoid conflicts.
+                        </li>
+                        <li class="list"><span style="color:#0079C1;"><strong>Hosted antivirus </strong></span> means
+                            there's no need to invest in new hardware.
+                        </li>
                     </ul>
 
                 </div>
 
-                <p style="font-weight:normal; color:#333; width:550px">Antivirus in ControlNow is part of an integrated IT management solution. You can try Antivirus on its own or try our other services for free. The web-based platform includes antivirus, patch management, web protection, remote control, performance monitoring and FREE asset tracking.</p>
+                <p style="font-weight:normal; color:#333; width:550px">Antivirus in ControlNow is part of an integrated
+                    IT management solution. You can try Antivirus on its own or try our other services for free. The
+                    web-based platform includes antivirus, patch management, web protection, remote control, performance
+                    monitoring and FREE asset tracking.</p>
 
 
-            </div>                    						<div class="formbg-wrapper">
-            <div id="bodyMidRight">
+            </div>
+            <div class="formbg-wrapper">
+                <div id="bodyMidRight">
 
 
-                <div id="formTop">&nbsp;</div>
+                    <div id="formTop">&nbsp;</div>
 
-                <div id="formMid">
-                    <div id="formSub">
-                        <p>Try it <span style="text-shadow:1px 2px #000">FREE</span> for 30 days</p>
-                    </div>
-                    <div id="formFields">
-                        <div id="nosignup" class="signup-red" style="display: none">ControlNow is currently unavailable in your country.</div>
-                        <div id="unexpectederror" class="signup-red" style="display: none;">Sorry. There has been an unexpected server error. <br/>If this problem persists please contact support.</div>
-                        <div id="signup-form">
-                            <!-- Issue a polite warning when JavaScript is disabled in general -->
-                            <noscript>
-                                <div>
-                                    <h3 class="signup-red">Please enable JavaScript in your browser settings.</h3>
-                                </div>
-                            </noscript>
-                            <div id="error" class="signup-red" style="display: none;">
-                                <p id="errormessage">&nbsp;</p>
+                    <div id="formMid">
+                        <div id="formSub">
+                            <p>Try it <span style="text-shadow:1px 2px #000">FREE</span> for 30 days</p>
+                        </div>
+                        <div id="formFields">
+                            <div id="nosignup" class="signup-red" style="display: none">ControlNow is currently
+                                unavailable in your country.
                             </div>
-                            <div id="throber"style="display: none; color:black;">
-                                <p id="loadingMessage"></p>
+                            <div id="unexpectederror" class="signup-red" style="display: none;">Sorry. There has been an
+                                unexpected server error. <br/>If this problem persists please contact support.
                             </div>
-
-                            <form accept-charset="UTF-8" name="gficloudform" id="gficloudform" style="height:430px; width:265px; padding-top: 20px; margin-top:-12px; padding-left:15px; margin-left:-16px; border-left:solid 1px #6fb1d7; border-right:solid 1px #6fb1d7; border-bottom:solid 1px #6fb1d7; background-color: #f3f4f5; border-bottom-left-radius:10px; border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px;-moz-border-bottom-left-radius:10px; -moz-border-bottom-right-radius:10px">
-                                <input id="refererurl" name="refererurl" type="hidden" />
-
-                                <input onKeyPress="removeErrHilite('contactfirstname')" type="text" placeholder="First name*" id="contactfirstname" alt="blank" maxlength="30" name="contactfirstname" />
-                                <input onKeyPress="removeErrHilite('contactlastname')" type="text" placeholder="Last name*" id="contactlastname" alt="blank" maxlength="30" name="contactlastname" />
-                                <input onKeyPress="removeErrHilite('varname')" type="text" placeholder="Company*" id="varname" alt="blank" maxlength="50" name="varname" />
-                                <input onKeyPress="removeErrHilite('contactemail')" type="text" placeholder="Business Email*" id="contactemail" alt="email|3" maxlength="60" name="contactemail" />
-                                <div id="passwordHint">
-                                    <div id="passwordInner"><span style="color:white; font-size:12px; margin-left:5px; margin-right:5px;line-height: 26px;">8 to 30 characters, 1 capital letter</span></div>
-                                    <div style="float:left;height:26px;"><img src="http://trials.gficloud.com/land/template-new/img/hint-arrow.png" ></div>
-                                </div>
-                                <input type="password" id="password" alt="blank" maxlength="32" name="password" />
-                                <input type="text" placeholder="Password*" id="password-clear" alt="blank" maxlength="32" name="password-clear" />
-                                <input type="text" placeholder="Phone number" id="phone" alt="numeric" maxlength="20" name="phone" />
-                                <select id="country" name="country">
-                                    <option value=""></option>
-                                    <option value="AF">Afghanistan</option>
-                                    <option value="AX">Aland Islands</option>
-                                    <option value="AL">Albania</option>
-                                    <option value="DZ">Algeria</option>
-                                    <option value="AS">American Samoa</option>
-                                    <option value="AD">Andorra</option>
-                                    <option value="AO">Angola</option>
-                                    <option value="AI">Anguilla</option>
-                                    <option value="AQ">Antarctica</option>
-                                    <option value="AG">Antigua and Barbuda</option>
-                                    <option value="AR">Argentina</option>
-                                    <option value="AM">Armenia</option>
-                                    <option value="AW">Aruba</option>
-                                    <option value="AU">Australia</option>
-                                    <option value="AT">Austria</option>
-                                    <option value="AZ">Azerbaijan</option>
-                                    <option value="BS">Bahamas</option>
-                                    <option value="BH">Bahrain</option>
-                                    <option value="BD">Bangladesh</option>
-                                    <option value="BB">Barbados</option>
-                                    <option value="BY">Belarus</option>
-                                    <option value="BE">Belgium</option>
-                                    <option value="BZ">Belize</option>
-                                    <option value="BJ">Benin</option>
-                                    <option value="BM">Bermuda</option>
-                                    <option value="BT">Bhutan</option>
-                                    <option value="BO">Bolivia</option>
-                                    <option value="BA">Bosnia and Herzegovina</option>
-                                    <option value="BW">Botswana</option>
-                                    <option value="BV">Bouvet Island</option>
-                                    <option value="BR">Brazil</option>
-                                    <option value="IO">British Indian Ocean Territory</option>
-                                    <option value="BN">Brunei</option>
-                                    <option value="BG">Bulgaria</option>
-                                    <option value="BF">Burkina Faso</option>
-                                    <option value="BI">Burundi</option>
-                                    <option value="KH">Cambodia</option>
-                                    <option value="CM">Cameroon</option>
-                                    <option value="CA">Canada</option>
-                                    <option value="CV">Cape Verde</option>
-                                    <option value="KY">Cayman Islands</option>
-                                    <option value="CF">Central African Republic</option>
-                                    <option value="TD">Chad</option>
-                                    <option value="CL">Chile</option>
-                                    <option value="CN">China</option>
-                                    <option value="CX">Christmas Island</option>
-                                    <option value="CC">Cocos (Keeling) Islands</option>
-                                    <option value="CO">Colombia</option>
-                                    <option value="KM">Comoros</option>
-                                    <option value="CD">Congo, Democratic Republic of the</option>
-                                    <option value="CG">Congo, Republic of the</option>
-                                    <option value="CK">Cook Islands</option>
-                                    <option value="CR">Costa Rica</option>
-                                    <option value="CI">Cote d'Ivoire</option>
-                                    <option value="HR">Croatia</option>
-                                    <option value="CY">Cyprus</option>
-                                    <option value="CZ">Czech Republic</option>
-                                    <option value="DK">Denmark</option>
-                                    <option value="DJ">Djibouti</option>
-                                    <option value="DM">Dominica</option>
-                                    <option value="DO">Dominican Republic</option>
-                                    <option value="TL">East Timor</option>
-                                    <option value="EC">Ecuador</option>
-                                    <option value="EG">Egypt</option>
-                                    <option value="SV">El Salvador</option>
-                                    <option value="GQ">Equatorial Guinea</option>
-                                    <option value="ER">Eritrea</option>
-                                    <option value="EE">Estonia</option>
-                                    <option value="ET">Ethiopia</option>
-                                    <option value="FK">Falkland Islands</option>
-                                    <option value="FO">Faroe Islands</option>
-                                    <option value="FJ">Fiji</option>
-                                    <option value="FI">Finland</option>
-                                    <option value="FR">France</option>
-                                    <option value="GF">French Guiana</option>
-                                    <option value="PF">French Polynesia</option>
-                                    <option value="TF">French Southern Territories</option>
-                                    <option value="GA">Gabon</option>
-                                    <option value="GM">Gambia</option>
-                                    <option value="GE">Georgia</option>
-                                    <option value="DE">Germany</option>
-                                    <option value="GH">Ghana</option>
-                                    <option value="GI">Gibraltar</option>
-                                    <option value="GR">Greece</option>
-                                    <option value="GL">Greenland</option>
-                                    <option value="GD">Grenada</option>
-                                    <option value="GP">Guadeloupe</option>
-                                    <option value="GT">Guatemala</option>
-                                    <option value="GG">Guernsey</option>
-                                    <option value="GN">Guinea</option>
-                                    <option value="GW">Guinea-Bissau</option>
-                                    <option value="GY">Guyana</option>
-                                    <option value="HT">Haiti</option>
-                                    <option value="HM">Heard Island and McDonald Islands</option>
-                                    <option value="VA">Holy See (Vatican City)</option>
-                                    <option value="HN">Honduras</option>
-                                    <option value="HK">Hong Kong</option>
-                                    <option value="HU">Hungary</option>
-                                    <option value="IS">Iceland</option>
-                                    <option value="IN">India</option>
-                                    <option value="ID">Indonesia</option>
-                                    <option value="IM">Isle of Man</option>
-                                    <option value="IL">Israel</option>
-                                    <option value="IT">Italy</option>
-                                    <option value="JM">Jamaica</option>
-                                    <option value="JP">Japan</option>
-                                    <option value="JE">Jersey</option>
-                                    <option value="JO">Jordan</option>
-                                    <option value="KZ">Kazakhstan</option>
-                                    <option value="KE">Kenya</option>
-                                    <option value="KI">Kiribati</option>
-                                    <option value="KR">Korea, South</option>
-                                    <option value="KW">Kuwait</option>
-                                    <option value="KG">Kyrgyzstan</option>
-                                    <option value="LA">Laos</option>
-                                    <option value="LV">Latvia</option>
-                                    <option value="LB">Lebanon</option>
-                                    <option value="LS">Lesotho</option>
-                                    <option value="LR">Liberia</option>
-                                    <option value="LI">Liechtenstein</option>
-                                    <option value="LT">Lithuania</option>
-                                    <option value="LU">Luxembourg</option>
-                                    <option value="MO">Macau</option>
-                                    <option value="MK">Macedonia, F.Y.R.</option>
-                                    <option value="MG">Madagascar</option>
-                                    <option value="MW">Malawi</option>
-                                    <option value="MY">Malaysia</option>
-                                    <option value="MV">Maldives</option>
-                                    <option value="ML">Mali</option>
-                                    <option value="MT">Malta</option>
-                                    <option value="MH">Marshall Islands</option>
-                                    <option value="MQ">Martinique</option>
-                                    <option value="MR">Mauritania</option>
-                                    <option value="MU">Mauritius</option>
-                                    <option value="YT">Mayotte</option>
-                                    <option value="MX">Mexico</option>
-                                    <option value="FM">Micronesia</option>
-                                    <option value="MD">Moldova</option>
-                                    <option value="MC">Monaco</option>
-                                    <option value="MN">Mongolia</option>
-                                    <option value="ME">Montenegro</option>
-                                    <option value="MS">Montserrat</option>
-                                    <option value="MA">Morocco</option>
-                                    <option value="MZ">Mozambique</option>
-                                    <option value="NA">Namibia</option>
-                                    <option value="NR">Nauru</option>
-                                    <option value="NP">Nepal</option>
-                                    <option value="NL">Netherlands</option>
-                                    <option value="AN">Netherlands Antilles</option>
-                                    <option value="NC">New Caledonia</option>
-                                    <option value="NZ">New Zealand</option>
-                                    <option value="NI">Nicaragua</option>
-                                    <option value="NE">Niger</option>
-                                    <option value="NG">Nigeria</option>
-                                    <option value="NU">Niue</option>
-                                    <option value="NF">Norfolk Island</option>
-                                    <option value="MP">Northern Mariana Islands</option>
-                                    <option value="NO">Norway</option>
-                                    <option value="OM">Oman</option>
-                                    <option value="PK">Pakistan</option>
-                                    <option value="PW">Palau</option>
-                                    <option value="PS">Palestinian Territory</option>
-                                    <option value="PA">Panama</option>
-                                    <option value="PG">Papua New Guinea</option>
-                                    <option value="PY">Paraguay</option>
-                                    <option value="PE">Peru</option>
-                                    <option value="PH">Philippines</option>
-                                    <option value="PN">Pitcairn</option>
-                                    <option value="PL">Poland</option>
-                                    <option value="PT">Portugal</option>
-                                    <option value="PR">Puerto Rico</option>
-                                    <option value="QA">Qatar</option>
-                                    <option value="IE">Republic of Ireland</option>
-                                    <option value="RE">Reunion</option>
-                                    <option value="RO">Romania</option>
-                                    <option value="RU">Russia</option>
-                                    <option value="RW">Rwanda</option>
-                                    <option value="SH">Saint Helena</option>
-                                    <option value="KN">Saint Kitts and Nevis</option>
-                                    <option value="LC">Saint Lucia</option>
-                                    <option value="PM">Saint Pierre and Miquelon</option>
-                                    <option value="VC">Saint Vincent and the Grenadines</option>
-                                    <option value="WS">Samoa</option>
-                                    <option value="SM">San Marino</option>
-                                    <option value="ST">Sao Tome and Principe</option>
-                                    <option value="SA">Saudi Arabia</option>
-                                    <option value="SN">Senegal</option>
-                                    <option value="RS">Serbia</option>
-                                    <option value="SC">Seychelles</option>
-                                    <option value="SL">Sierra Leone</option>
-                                    <option value="SG">Singapore</option>
-                                    <option value="SK">Slovakia</option>
-                                    <option value="SI">Slovenia</option>
-                                    <option value="SB">Solomon Islands</option>
-                                    <option value="SO">Somalia</option>
-                                    <option value="ZA">South Africa</option>
-                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
-                                    <option value="ES">Spain</option>
-                                    <option value="LK">Sri Lanka</option>
-                                    <option value="SR">Suriname</option>
-                                    <option value="SJ">Svalbard and Jan Mayen Islands</option>
-                                    <option value="SZ">Swaziland</option>
-                                    <option value="SE">Sweden</option>
-                                    <option value="CH">Switzerland</option>
-                                    <option value="TW">Taiwan</option>
-                                    <option value="TJ">Tajikistan</option>
-                                    <option value="TZ">Tanzania</option>
-                                    <option value="TH">Thailand</option>
-                                    <option value="TG">Togo</option>
-                                    <option value="TK">Tokelau</option>
-                                    <option value="TO">Tonga</option>
-                                    <option value="TT">Trinidad and Tobago</option>
-                                    <option value="TN">Tunisia</option>
-                                    <option value="TR">Turkey</option>
-                                    <option value="TM">Turkmenistan</option>
-                                    <option value="TC">Turks and Caicos Islands</option>
-                                    <option value="TV">Tuvalu</option>
-                                    <option value="UG">Uganda</option>
-                                    <option value="UA">Ukraine</option>
-                                    <option value="AE">United Arab Emirates</option>
-                                    <option value="GB">United Kingdom</option>
-                                    <option value="US">United States</option>
-                                    <option value="UM">United States Minor Outlying Islands</option>
-                                    <option value="UY">Uruguay</option>
-                                    <option value="UZ">Uzbekistan</option>
-                                    <option value="VU">Vanuatu</option>
-                                    <option value="VE">Venezuela</option>
-                                    <option value="VN">Vietnam</option>
-                                    <option value="VG">Virgin Islands, British</option>
-                                    <option value="VI">Virgin Islands, U.S.</option>
-                                    <option value="WF">Wallis and Futuna</option>
-                                    <option value="EH">Western Sahara</option>
-                                    <option value="YE">Yemen</option>
-                                    <option value="ZM">Zambia</option>
-                                    <option value="ZW">Zimbabwe</option>
-                                </select>
-                                <div id="state_choice_div" style="display: none;">
-                                    <select id="state" name="state">
-                                        <!--<option value="">Please select...</option>-->
-                                    </select>
-                                </div>
-                                <input placeholder="Preferred reseller" id="preferredReseller" name="preferredReseller" type="hidden">
-                                <div id="formServices" style="display:none">
-                                    <strong>I want to try these ControlNow services</strong>:*<br/><br />
-
-                                    <input type="checkbox" id="vipre" name="vipre"  checked="checked"/> Antivirus <span class="moreInfo" title="Business antivirus and anti-spyware">(?)</span>
-                                    <br/><br />
-                                    <input type="checkbox" id="nsmo" name="nsmo" /> Monitoring <span class="moreInfo" title="Server and workstation monitoring">(?)</span>
-                                    <br/><br />
-                                    <input type="checkbox" id="patch" name="patch" /> Patch Management <span class="moreInfo" title="Microsoft&#169; and 3rd party software updates">(?)</span><br/><br />
-                                    <input type="checkbox" id="webfilter" name="webfilter"/> Web Protection <span class="moreInfo" title="Web security and URL filtering">(?)</span>
-                                    <br/><br />
-                                    <input type="checkbox" id="remotecontrol" name="remotecontrol"/> Remote Control <span class="moreInfo" title="Take control of computers remotely">(?)</span>
-                                </div>
-                                <div id="formInfo" style="display:block; font-size:10px; padding-top:20px">
-                                    <input type="checkbox" id="opt_mail" checked="checked" name="opt_mail" /> Inform me of other LogicNow products and services<br /><br />
-                                    <input type="checkbox" id="eula"  checked="checked" name="eula"/ style="display:none"> By starting my trial I accept ControlNow's<br /> <a style="text-decoration:underline" href="https://www.controlnow.com/platform/eula" target="_blank">license agreement</a>
-                                    <input type="hidden" name="_ga" value="" />
-                                </div>
-                                <div id="formRequired" style="font-size:10px">
-                                    * Required fields
-                                </div>
-
-                                <div id="submit-button" style="position:relative; left:-21px; top: 32px;">
-                                    <div id="submit-throber" style="display:none; position:absolute; top:10px; right:165px">
-                                        <img src="http://trials.gficloud.com/land/template-new/img/loader.gif">
+                            <div id="signup-form">
+                                <!-- Issue a polite warning when JavaScript is disabled in general -->
+                                <noscript>
+                                    <div>
+                                        <h3 class="signup-red">Please enable JavaScript in your browser settings.</h3>
                                     </div>
+                                </noscript>
+                                <div id="error" class="signup-red" style="display: none;">
+                                    <p id="errormessage">&nbsp;</p>
                                 </div>
-                            </form>
-                            <br><p style="font-size:10px; color:#333333; margin-left:-11px">ControlNow&nbsp;no&nbsp;longer&nbsp;supports IE9 for security and usability reasons. If you are currently using IE9 please use an alternative browser.</p>
+                                <div id="throber" style="display: none; color:black;">
+                                    <p id="loadingMessage"></p>
+                                </div>
+
+                                <form accept-charset="UTF-8" name="gficloudform" id="gficloudform"
+                                      style="height:430px; width:265px; padding-top: 20px; margin-top:-12px; padding-left:15px; margin-left:-16px; border-left:solid 1px #6fb1d7; border-right:solid 1px #6fb1d7; border-bottom:solid 1px #6fb1d7; background-color: #f3f4f5; border-bottom-left-radius:10px; border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; -webkit-border-bottom-right-radius:10px;-moz-border-bottom-left-radius:10px; -moz-border-bottom-right-radius:10px">
+                                    <input id="refererurl" name="refererurl" type="hidden"/>
+
+                                    <input onKeyPress="removeErrHilite('contactfirstname')" type="text"
+                                           placeholder="First name*" id="contactfirstname" alt="blank" maxlength="30"
+                                           name="contactfirstname"/>
+                                    <input onKeyPress="removeErrHilite('contactlastname')" type="text"
+                                           placeholder="Last name*" id="contactlastname" alt="blank" maxlength="30"
+                                           name="contactlastname"/>
+                                    <input onKeyPress="removeErrHilite('varname')" type="text" placeholder="Company*"
+                                           id="varname" alt="blank" maxlength="50" name="varname"/>
+                                    <input onKeyPress="removeErrHilite('contactemail')" type="text"
+                                           placeholder="Business Email*" id="contactemail" alt="email|3" maxlength="60"
+                                           name="contactemail"/>
+
+                                    <div id="passwordHint">
+                                        <div id="passwordInner"><span
+                                                style="color:white; font-size:12px; margin-left:5px; margin-right:5px;line-height: 26px;">8 to 30 characters, 1 capital letter</span>
+                                        </div>
+                                        <div style="float:left;height:26px;"><img
+                                                src="http://trials.gficloud.com/land/template-new/img/hint-arrow.png">
+                                        </div>
+                                    </div>
+                                    <input type="password" id="password" alt="blank" maxlength="32" name="password"/>
+                                    <input type="text" placeholder="Password*" id="password-clear" alt="blank"
+                                           maxlength="32" name="password-clear"/>
+                                    <input type="text" placeholder="Phone number" id="phone" alt="numeric"
+                                           maxlength="20" name="phone"/>
+                                    <select id="country" name="country">
+                                        <option value=""></option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AX">Aland Islands</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet Island</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="IO">British Indian Ocean Territory</option>
+                                        <option value="BN">Brunei</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="KY">Cayman Islands</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmas Island</option>
+                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CD">Congo, Democratic Republic of the</option>
+                                        <option value="CG">Congo, Republic of the</option>
+                                        <option value="CK">Cook Islands</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CI">Cote d'Ivoire</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="TL">East Timor</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="GQ">Equatorial Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FK">Falkland Islands</option>
+                                        <option value="FO">Faroe Islands</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GF">French Guiana</option>
+                                        <option value="PF">French Polynesia</option>
+                                        <option value="TF">French Southern Territories</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GL">Greenland</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GG">Guernsey</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">Heard Island and McDonald Islands</option>
+                                        <option value="VA">Holy See (Vatican City)</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IM">Isle of Man</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JE">Jersey</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KR">Korea, South</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Laos</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macau</option>
+                                        <option value="MK">Macedonia, F.Y.R.</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MH">Marshall Islands</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesia</option>
+                                        <option value="MD">Moldova</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="AN">Netherlands Antilles</option>
+                                        <option value="NC">New Caledonia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="NF">Norfolk Island</option>
+                                        <option value="MP">Northern Mariana Islands</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PS">Palestinian Territory</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PN">Pitcairn</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="IE">Republic of Ireland</option>
+                                        <option value="RE">Reunion</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russia</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="SH">Saint Helena</option>
+                                        <option value="KN">Saint Kitts and Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                        <option value="VC">Saint Vincent and the Grenadines</option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tome and Principe</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SB">Solomon Islands</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard and Jan Mayen Islands</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="TW">Taiwan</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks and Caicos Islands</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UM">United States Minor Outlying Islands</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Vietnam</option>
+                                        <option value="VG">Virgin Islands, British</option>
+                                        <option value="VI">Virgin Islands, U.S.</option>
+                                        <option value="WF">Wallis and Futuna</option>
+                                        <option value="EH">Western Sahara</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+
+                                    <div id="state_choice_div" style="display: none;">
+                                        <select id="state" name="state">
+                                            <!--<option value="">Please select...</option>-->
+                                        </select>
+                                    </div>
+                                    <input placeholder="Preferred reseller" id="preferredReseller"
+                                           name="preferredReseller" type="hidden">
+
+                                    <div id="formServices" style="display:none">
+                                        <strong>I want to try these ControlNow services</strong>:*<br/><br/>
+
+                                        <input type="checkbox" id="vipre" name="vipre" checked="checked"/> Antivirus
+                                        <span class="moreInfo" title="Business antivirus and anti-spyware">(?)</span>
+                                        <br/><br/>
+                                        <input type="checkbox" id="nsmo" name="nsmo"/> Monitoring <span class="moreInfo"
+                                                                                                        title="Server and workstation monitoring">(?)</span>
+                                        <br/><br/>
+                                        <input type="checkbox" id="patch" name="patch"/> Patch Management <span
+                                            class="moreInfo"
+                                            title="Microsoft&#169; and 3rd party software updates">(?)</span><br/><br/>
+                                        <input type="checkbox" id="webfilter" name="webfilter"/> Web Protection <span
+                                            class="moreInfo" title="Web security and URL filtering">(?)</span>
+                                        <br/><br/>
+                                        <input type="checkbox" id="remotecontrol" name="remotecontrol"/> Remote Control
+                                        <span class="moreInfo" title="Take control of computers remotely">(?)</span>
+                                    </div>
+                                    <div id="formInfo" style="display:block; font-size:10px; padding-top:20px">
+                                        <input type="checkbox" id="opt_mail" checked="checked" name="opt_mail"/> Inform
+                                        me of other LogicNow products and services<br/><br/>
+                                        <input type="checkbox" id="eula" checked="checked" name="eula"/
+                                        style="display:none"> By starting my trial I accept ControlNow's<br/> <a
+                                            style="text-decoration:underline"
+                                            href="https://www.controlnow.com/platform/eula" target="_blank">license
+                                        agreement</a>
+                                        <input type="hidden" name="_ga" value=""/>
+                                    </div>
+                                    <div id="formRequired" style="font-size:10px">
+                                        * Required fields
+                                    </div>
+
+                                    <div id="submit-button" style="position:relative; left:-21px; top: 32px;">
+                                        <div id="submit-throber"
+                                             style="display:none; position:absolute; top:10px; right:165px">
+                                            <img src="http://trials.gficloud.com/land/template-new/img/loader.gif">
+                                        </div>
+                                    </div>
+                                </form>
+                                <br>
+
+                                <p style="font-size:10px; color:#333333; margin-left:-11px">ControlNow&nbsp;no&nbsp;longer&nbsp;supports
+                                    IE9 for security and usability reasons. If you are currently using IE9 please use an
+                                    alternative browser.</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!--END {{ widget_data.main_body.value }}-->
+
+
+                    <div id="formBottom">&nbsp;</div>
                 </div>
+                <div class="formbg" style="height:510px"></div>
+            </div>
+        </div>
+        <div id="bodyBottom">&nbsp;</div>
+    </div>
+    <div id="footer">
 
-<!--END {{ widget_data.main_body.value }}-->
+        <!-- social proofing stuff --->
+        <div id="footer-proofing">
+            <div id="footer-proofing-left">
+                <div id="footer-proofing-content">
+                    <span class="leftQuote"></span>
 
-
-<div id="formBottom">&nbsp;</div>					</div>
-<div class="formbg" style="height:510px"></div>
-</div>
-</div>
-<div id="bodyBottom">&nbsp;</div>
-</div>
-<div id="footer">
-
-    <!-- social proofing stuff --->
-    <div id="footer-proofing">
-        <div id="footer-proofing-left">
-            <div id="footer-proofing-content">
-                <span class="leftQuote"></span>
-                <div class="awardText">
+                    <div class="awardText">
                         <span>
                             With ControlNow we have one central place to manage everything and we also get to eliminate 4 servers.
                             <span class="rightQuote"></span>
                         </span><br>
+                    </div>
+                    <span class="awardAuthor">Ron Davis, Sr Systems Admin, Mimeo</span>
                 </div>
-                <span class="awardAuthor">Ron Davis, Sr Systems Admin, Mimeo</span>
+            </div>
+            <div id="footer-proofing-right">
+                <div style="width:100px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482421507-jpg/control_now/images/windows-networking-award-1.jpg) no-repeat left"></div>
+                <div style="width:115px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482811359-jpg/control_now/images/SME-Security-Solution-of-the-Year.jpg) no-repeat center"></div>
+                <div style="width:115px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482381477-jpg/control_now/images/Cloud-Security-Solution-of-the-Year-1.jpg) no-repeat center"></div>
+                <div style="width:95px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482381472-jpg/control_now/images/stevie-award-1.jpg) no-repeat right"></div>
+
             </div>
         </div>
-        <div id="footer-proofing-right">
-            <div style="width:100px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482421507-jpg/control_now/images/windows-networking-award-1.jpg) no-repeat left"></div>
-            <div style="width:115px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482811359-jpg/control_now/images/SME-Security-Solution-of-the-Year.jpg) no-repeat center"></div>
-            <div style="width:115px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482381477-jpg/control_now/images/Cloud-Security-Solution-of-the-Year-1.jpg) no-repeat center"></div>
-            <div style="width:95px; height:100%; float: left; background:url(http://cdn2.hubspot.net/hub/120076/file-2482381472-jpg/control_now/images/stevie-award-1.jpg) no-repeat right"></div>
+        <!-- end social proofing-->
 
+        <div style="padding:0 24px 0 24px">
+            <div id="copyright">Copyright &copy; 2015 LogicNow Ltd <br><br></div>
+            <div id="footerMenu">
+                <a href="https://www.controlnow.com/" target="_blank">controlnow.com</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                <a href="http://www.controlnow.com/contact-us" target="_blank">Contact us</a> &nbsp;&nbsp;&nbsp; |
+                &nbsp;&nbsp;&nbsp;
+                <a href="http://support.controlnow.com/" target="_blank">Support</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                <a href="https://www.controlnow.com/legal/terms-of-use" target="_blank">Legal</a> &nbsp;&nbsp;&nbsp; |
+                &nbsp;&nbsp;&nbsp;
+                <a href="https://www.controlnow.com/legal/privacy-policy" target="_blank">Privacy</a> &nbsp;&nbsp;&nbsp;
+                | &nbsp;&nbsp;&nbsp;
+                <a href="https://www.controlnow.com/legal/cookie-policy" target="_blank">Cookies</a> &nbsp;&nbsp;&nbsp;
+                | &nbsp;&nbsp;&nbsp;
+                <a href="http://www.controlnow.com/platform/eula" target="_blank">EULA</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                <a href="https://www.controlnow.com/sitemap" target="_blank">Site map</a>
+            </div>
+            <br/><br/>
         </div>
-    </div><!-- end social proofing-->
-
-    <div style="padding:0 24px 0 24px">
-        <div id="copyright">Copyright &copy; 2015 LogicNow Ltd <br><br></div>
-        <div id="footerMenu">
-            <a href="https://www.controlnow.com/" target="_blank">controlnow.com</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="http://www.controlnow.com/contact-us" target="_blank">Contact us</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="http://support.controlnow.com/" target="_blank">Support</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="https://www.controlnow.com/legal/terms-of-use" target="_blank">Legal</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="https://www.controlnow.com/legal/privacy-policy" target="_blank">Privacy</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="https://www.controlnow.com/legal/cookie-policy" target="_blank">Cookies</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="http://www.controlnow.com/platform/eula" target="_blank">EULA</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <a href="https://www.controlnow.com/sitemap" target="_blank">Site map</a>
-        </div>
-        <br/><br/>
     </div>
-</div>
 </div>
 
 
