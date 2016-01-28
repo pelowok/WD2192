@@ -485,3 +485,7 @@ body {
 .pointthree, .pointfour {
     padding: 20px 10px;
 }
+
+#footer a {
+    color: #fff;
+}

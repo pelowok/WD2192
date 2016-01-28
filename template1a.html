@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!--IMPORT STYLES -->
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-    <!--IMPORT TRACKING -->
-    <!--calls optimizely-->
-    <script src="//cdn.optimizely.com/js/2179121030.js"></script>
-    <!--calls rum.monitis-->
-    <script src="http://rum.monitis.com/get/jsbenchmark.min.js?id=5008" type="text/javascript" async></script>
+    <!-- Basic Styles -->
+    <link href="http://pages.logicnow.com/rs/356-UVH-403/images/basics.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic|Oswald:400,300,700" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,52 +31,160 @@
     }</script>
     <!-- END TypeKit -->
 
-    <!--TEMPLATE CONTENT VARIABLES -->
-    <meta class="mktoString" id="varPageTitle" mktoName="Page Title" default="LOGICnow.com" allowHtml="true" />
-    <meta class="mktoString" id="varFavicon" mktoName="favicon" default="http://pages.logicnow.com/rs/356-UVH-403/images/favicon_logicnow.ico" allowHtml="true" />
-    <meta class="mktoString" id="varHomeURL" mktoName="Home URL" default="http://logicnow.com" allowHtml="true" />
-    <meta class="mktoString" id="varHeroImage" mktoName="Hero image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true" />
-    <meta class="mktoString" id="varLogoImage" mktoName="Logo image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true" />
+    <meta class="mktoString" id="var1" mktoName="headline" default="Headline goes here" allowHtml="true" />
+    <meta class="mktoString" id="varStickerLeftPosition" mktoName="left-hand positioning of sticker graphic" default="345" allowHtml="true" />
+    <meta class="mktoString" id="var3" mktoName="productlogo" default="http://pages.logicnow.com/rs/356-UVH-403/images/max-bylogicnow-logo.png" allowHtml="true" />
+    <meta class="mktoString" id="var4" mktoName="trust-text" default="Trusted by over 12,000 MSPs and IT Support companies" allowHtml="true" />
+    <meta class="mktoString" id="var5" mktoName="headline" default="Endpoint Security Protection" allowHtml="true" />
+    <meta class="mktoString" id="var6" mktoName="favicon" default="http://pages.logicnow.com/rs/356-UVH-403/images/favicon_logicnow.ico" allowHtml="true" />
+    <meta class="mktoString" id="var7" mktoName="homeurl" default="http://logicnow.com" allowHtml="true" />
+    <meta class="mktoString" id="var8" mktoName="bannersublogo" default="http://pages.logicnow.com/rs/356-UVH-403/images/new-fix-issues-sticker.png" allowHtml="true" />
+    <meta class="mktoString" id="var9" mktoName="heroheader" default="Hosted Business Antivirus" allowHtml="true" />
 
-    <meta class="mktoString" id="varContactInfoCountryName1" mktoName="Contact country name 1" default="USA" allowHtml="true" />
-    <meta class="mktoString" id="varContactInfoCountryPhone1" mktoName="Contact country phone 1" default="+1 (888) 243-4329" allowHtml="true" />
-    <meta class="mktoString" id="varContactInfoCountryName2" mktoName="Contact country name 2" default="UK" allowHtml="true" />
-    <meta class="mktoString" id="varContactInfoCountryPhone2" mktoName="Contact country phone 2" default="+44 (0) 1382 309040" allowHtml="true" />
+    <meta class="mktoString" id="var10a" mktoName="hero title 1" default="" allowHtml="true" />
+    <meta class="mktoString" id="var10b" mktoName="hero title 2" default="Protect your company's network" allowHtml="true" />
+    <meta class="mktoString" id="var10c" mktoName="hero title 3" default="against viruses and other malware" allowHtml="true" />
+    <meta class="mktoString" id="var10d" mktoName="hero title 4" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="var12" mktoName="heroimg" default="http://pages.logicnow.com/rs/356-UVH-403/images/antiviruswide.png" allowHtml="true" />
+    <meta class="mktoString" id="var13" mktoName="bodytext1" default="Start protecting your business with ControlNow antivirus in less than 10 minutes:" allowHtml="true" />
+    <meta class="mktoString" id="varBodyText1d" mktoName="Body Text 1c - above list : ital black" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="var14a" mktoName="bodytextitem1a" default="Real-time protection against viruses," allowHtml="true" />
+    <meta class="mktoString" id="var14b" mktoName="bodytextitem1b" default=" without slowing down your PCs." allowHtml="true" />
+
+    <meta class="mktoString" id="var15a" mktoName="bodytextitem2a" default="Easily manage server and network security anytime," allowHtml="true" />
+    <meta class="mktoString" id="var15b" mktoName="bodytextitem2b" default=" from anywhere." allowHtml="true" />
+
+    <meta class="mktoString" id="var16a" mktoName="bodytextitem3a" default="Install and scan on the endpoint" allowHtml="true" />
+    <meta class="mktoString" id="var16b" mktoName="bodytextitem3b" default=" so no sensitive data leaves the network." allowHtml="true" />
+
+    <meta class="mktoString" id="var17a" mktoName="bodytextitem4a" default="Easy removal of existing antivirus" allowHtml="true" />
+    <meta class="mktoString" id="var17b" mktoName="bodytextitem4b" default=" software to avoid conflicts." allowHtml="true" />
+
+    <meta class="mktoString" id="var18a" mktoName="bodytextitem5a" default="Hosted antivirus" allowHtml="true" />
+    <meta class="mktoString" id="var18b" mktoName="bodytextitem5b" default=" means there's no need to invest in new hardware." allowHtml="true" />
+
+    <meta class="mktoString" id="varBodyTextItem6a" mktoName="bodytextitem6a" default="" allowHtml="true" />
+    <meta class="mktoString" id="varBodyTextItem6b" mktoName="bodytextitem6b" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="varBodyTextItem7a" mktoName="bodytextitem7a" default="" allowHtml="true" />
+    <meta class="mktoString" id="varBodyTextItem7b" mktoName="bodytextitem7b" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="varBodyTextItem8a" mktoName="bodytextitem8a" default="" allowHtml="true" />
+    <meta class="mktoString" id="varBodyTextItem8b" mktoName="bodytextitem8b" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="varBodyTextItem9a" mktoName="bodytextitem9a" default="" allowHtml="true" />
+    <meta class="mktoString" id="varBodyTextItem9b" mktoName="bodytextitem9b" default="" allowHtml="true" />
+
+    <meta class="mktoString" id="var20" mktoName="lowerBodyText" default="Antivirus in ControlNow is part of an integrated
+                    IT management solution. You can try Antivirus on its own or try our other services for free. The
+                    web-based platform includes antivirus, patch management, web protection, remote control, performance
+                    monitoring and FREE asset tracking." allowHtml="true" />
 
 
-    <!--PAGE META DATA -->
-    <title>${varPageTitle}</title>
-    <link rel="shortcut icon" href=${varFavicon} type="image/vnd.microsoft.icon"/>
+    <meta class="mktoString" id="varFormYpos" mktoName="Y-position of form div" default="0" allowHtml="true" />
+    <meta class="mktoString" id="varFormBackgroundYpos" mktoName="Y-position of form background graphic" default="0" allowHtml="true" />
+    <meta class="mktoString" id="varFormInteriorYpos" mktoName="Y-position of form interior (fields)" default="0" allowHtml="true" />
+
+    <meta class="mktoString" id="var21" mktoName="Award text" default="With MAX Remote Management we have one central place to manage everything and we also get to eliminate 4 servers." allowHtml="true" />
+    <meta class="mktoString" id="var22" mktoName="award author" default="Ron Davis, Sr Systems Admin, Mimeo" allowHtml="true" />
+    <meta class="mktoString" id="var23" mktoName="award image 1" default="http://pages.logicnow.com/rs/356-UVH-403/images/windows-networking-award-1.jpg" allowHtml="true" />
+    <meta class="mktoString" id="var24" mktoName="award image 2" default="http://pages.logicnow.com/rs/356-UVH-403/images/SME-Security-Solution-of-the-Year.jpg" allowHtml="true" />
+    <meta class="mktoString" id="var25" mktoName="award image 3" default="http://pages.logicnow.com/rs/356-UVH-403/images/Cloud-Security-Solution-of-the-Year-1.jpg" allowHtml="true" />
+    <meta class="mktoString" id="var26" mktoName="award image 4" default="http://pages.logicnow.com/rs/356-UVH-403/images/stevie-award-1.jpg" allowHtml="true" />
+    <meta class="mktoString" id="varFooterPaddingTop" mktoName="Footer:padding-top" default="35px" allowHtml="true" />
+
+    <meta class="mktoString" id="varFormMid" mktoName="#formMid styling" default="top:79px;right:-14px;" allowHtml="true" />
+    <meta class="mktoString" id="varFormSub" mktoName="#formSub styling" default="top:-62px;left:10px;" allowHtml="true" />
+    <meta class="mktoString" id="varFormBGStyle" mktoName="#formbg styling" default="top:-50px;right:-53px;background-size:cover;width:300px;height:540px;" allowHtml="true" />
+    <meta class="mktoString" id="varFormFields" mktoName="#formFields styling" default="width:215px;" allowHtml="true" />
+    <meta class="mktoString" id="varFormSubP" mktoName="#formSub paragraph styling" default="margin: -50px 0;font-size: 20px;" allowHtml="true" />
+    <meta class="mktoString" id="varLabelForOptMail" mktoName="label[for=optMail] styling" default="width: 85% !important;" allowHtml="true" />
+
+    <title>${var5}</title>
+
+    <link rel="shortcut icon" href=${var6} type="image/vnd.microsoft.icon"/>
+
+    <script src="//cdn.optimizely.com/js/2179121030.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="http://rum.monitis.com/get/jsbenchmark.min.js?id=5008" type="text/javascript" async></script>
 
 
+    <!-- Style -->
+    <link rel="stylesheet" href="http://pages.logicnow.com/rs/356-UVH-403/images/styles.css"/>
+    <link rel="stylesheet" href="http://pages.logicnow.com/rs/356-UVH-403/images/styles-with-urls.css"/>
+
+    <!--[if IE 7]>
     <style>
-        .bannerbox ul{
-            height:536px !important;
-        }
-        .heroimage{
-            background-position:top-left;
-            background-repeat:no-repeat;
-            height:32px;
-            margin-left:210px;
-            position:relative;
-            top:30px;
-            width:208px;
-        }
-        #header .contactdetails{
-            position:relative;
-            top:-26px;
-        }
-        #content{
-            margin:0px;
-            position:relative;
-            top:-10px;
+        .checkText {
+            float: none;
         }
     </style>
+    <![endif]-->
+    <!-- Javascript -->
 
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726915-js/control_now/js/jQuery.dPassword.js"></script>-->
+    <!--<script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2400150909-js/control_now/js/jquery.placeholder.js"></script>-->
+    <!--<script type="text/javascript" src="http://cdn2.hubspot.net/hub/120076/file-2098488177-js/control_now/js/utils.js"></script>-->
+    <!--<script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726870-js/control_now/js/form.js"></script>-->
+    <!--<script type="text/javascript" src="http://trials.controlnow.com/hs-fs/hub/120076/file-2399726910-js/control_now/js/gaclientid.js"></script>-->
+
+    <style>
+        .lg-bold-black {
+            font-weight:700;
+            font-size:2em;
+            color:#000000;
+            width:550px;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .lg-bold-blue {
+            font-style:italic;
+            font-weight:400;
+            font-size:1.4em;
+            color:#0079C1;
+            width:550px;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .bodytext {
+            width:550px;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .bodytext-bold {
+            width:550px;
+            font-weight:700;
+            margin: 1em 0 2em 0;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .ital-black {
+            font-style:italic;
+            font-weight:400;
+            font-size:1.4em;
+            margin: 1em 0 0;
+            color:#333;
+            width:550px;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .ital-blue {
+            font-style:italic;
+            font-weight:400;
+            font-size:1.4em;
+            margin: 1.4em 0 1.4em 0;
+            color:#0079C1;
+            width:550px;
+            font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        label[for=optMail] {
+            width: 85% !important;
+        }
+    </style>
 </head>
 
-<body>
-
+<body style="font-family: 'Open Sans', sans-serif;">
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M897H7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M897H7');</script>
@@ -87,128 +192,181 @@
 
 
 
-<div class="sitecontainer mktoContent">
+<div id="main">
     <div id="header">
-        <div class="logo">
-            <h1 style="height:90px;"><a href="https://www.maxfocus.com"><img src="//cdn2.hubspot.net/hub/120076/file-2373401000-png/images/max_focus_remote_management_logo.png?t=1425309934000"></a></h1>
-        </div>
-        <div class="heroimage" style="background-image: url(${varHeroImage});"></div>
+        <div id="cloudLogo"><a href=${var7} target="_blank">&nbsp;</a></div>
 
-        <div class="contactdetails">
 
-            <p>Need assistance? Call: ${varContactInfoCountryName1} <strong>${varContactInfoCountryPhone1}</strong> ${varContactInfoCountryName2} <strong>${varContactInfoCountryPhone2}</strong></p>
-
-        </div>
     </div>
+    <div id="body">
+        <div id="banner"
+             style="background: rgba(0 0 0 0); width:1022px; height:265px; margin-left:1px">
+            <span style="position: absolute; left:${varStickerLeftPosition}px; top:-65px; z-index:1"><img
+                    src=${var8}
+                    width="150px"></span>
 
-    <div id="content">
-        <div id="rightcolumn">
-            <div class="form">
-                <div id="form">
-                    <h2>
-                        <span>Get your FREE 30-day Full Feature Trial</span>
-                    </h2>
-          
-         <span id="hs_cos_wrapper_trial_form" class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container"><div id="hs_cos_wrapper_widget_2375404004" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_global_widget hs_global_widget" style="" data-hs-cos-general-type="widget" data-hs-cos-type="global_widget">
+            <div id="banner-copy">
+                <span style="font-size: 27px; font-weight:300; color: #0079C1; ">${var10a}</span>
+                <h1>${var9}</h1>
+                <span style="font-size: 27px; color: #0079C1; ">${var10d}</span>
+                <span style="font-size: 27px; color: #333333; ">
+                    ${var10b}
+                  <br>
+                  ${var10c}
+                </span>
 
-             <!--FORM GOES HERE-->
-             <!--<aside class="col-xs-12 col-sm-4 col-md-3 bg-gray-40 sm-overset-200 md-overset-200 lg-overset-200 box-500 border-5 mktEditable" id="form">-->
-             <div class="mktEditable mktoText" id="aboveFormText" mktoName="Above Form Text"></div>
-             <div class="mktoForm" id="sideForm" mktoName="Sidebar Form">
+                <br>
 
-             </div>
-             <!--!FORM GOES HERE!-->
+                <br>
+                <h1>
+                    <span class="mktoSnippet" id="var11" mktoName="hero body CTA" style="color:#333333; font-weight:normal;font-size:27px">
+                        Start your
+                        <span style="color:#8bc53f">
+                            <strong>
+                                FREE
+                            </strong>
+                        </span>
+                        trial today
+                    </span>
+                </h1>
+            </div>
+            <div style="position:absolute; right:-3px; bottom:-17px"><img
+                    src=${var12}></div>
+        </div>
+        <div id="bodyMid" style="height:450px">
+            <style>
+                #bodyMid {
+                    height: 700px;
+                    padding-bottom: 30px;
+                }
+
+                #formMid {
+                    height: auto;
+                }
+
+                #formMid-TY {
+                    height: 510px;
+                }
+
+                .list {
+                    color: #666666;
+                    font-size: 16px;
+                    font-family: "myriad-pro", "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    background: url(http://pages.logicnow.com/rs/356-UVH-403/images/bullet00.png) no-repeat 0px 4px;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    padding-left: 20px;
+                }
+            </style>
+            <div id="bodyMidLeft">
+                <div style="float: left; margin-top: 30px; margin-bottom:15px">
+                    <p class="bodytext">${var13}</p>
+
+                    <span class="ital-black">${varBodyText1d}</span>
+
+                    <br/>
+                    <ul style="padding-left:20px">
+                        <li class="list"><span style="color:#0079C1;"><strong>${var14a}</strong></span>${var14b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${var15a}</strong></span>${var15b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${var16a}</strong></span>${var16b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${var17a}</strong></span>${var17b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${var18a}</strong></span>${var18b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${varBodyTextItem6a}</strong></span>${varBodyTextItem6b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${varBodyTextItem7a}</strong></span>${varBodyTextItem7b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${varBodyTextItem8a}</strong></span>${varBodyTextItem8b}</li>
+                        <li class="list"><span style="color:#0079C1;"><strong>${varBodyTextItem9a}</strong></span>${varBodyTextItem9b}</li>
 
 
-             <script type="text/javascript" src="http://trials.maxfocus.com/hs-fs/hub/120076/file-2370086740-js/max_extra/RM/V7/js/promo.js"></script>
-         </div>
-         </span>
+                    </ul>
+
+                </div>
+
+                <p style="font-weight:normal; color:#333; width:550px">${var20}</p>
 
 
+            </div>
+            <div class="formbg-wrapper">
+                <div id="bodyMidRight">
 
-                    <p class="subtext"> Join thousands of MSPs and IT support companies already thriving with LogicNow. </p>
+
+                    <div id="formTop"></div>
+
+                    <div id="formMid" style="${varFormMid}">
+                        <div id="formSub" style="${varFormSub}">
+                            <p style="${varFormSubP}">Try it <span style="text-shadow:1px 2px #000">FREE</span> for 30 days</p>
+                        </div>
+                        <div id="formFields" style="${varFormFields}">
+
+                            <!--FORM GOES HERE-->
+                            <!--<aside class="col-xs-12 col-sm-4 col-md-3 bg-gray-40 sm-overset-200 md-overset-200 lg-overset-200 box-500 border-5 mktEditable" id="form">-->
+                            <div class="mktEditable mktoText" id="aboveFormText" mktoName="Above Form Text"></div>
+                            <div class="mktoForm" id="sideForm" mktoName="Sidebar Form">
+                                <!--!FORM GOES HERE!-->
+                            </div>
+                            <!--</aside>-->
+
+                        </div>
+
+                    </div>
+
+                    <div class="formbg" style=${varFormBGStyle}></div>
+                </div>
+            </div>
+            <div id="bodyBottom">&nbsp;</div>
+        </div>
+        <div id="footer" style="padding-top:${varFooterPaddingTop}">
+
+            <!-- social proofing stuff --->
+            <div id="footer-proofing">
+                <div id="footer-proofing-left">
+                    <div id="footer-proofing-content">
+                        <span class="leftQuote"></span>
+
+                        <div class="awardText">
+                        <span>
+                            ${var21}
+                            <span class="rightQuote"></span>
+                        </span><br>
+                        </div>
+                        <span class="awardAuthor">${var22}</span>
+                    </div>
+                </div>
+                <div id="footer-proofing-right">
+                    <div style="width:100px; height:100%; float: left; background:url(${var23}) no-repeat left"></div>
+                    <div style="width:115px; height:100%; float: left; background:url(${var24}) no-repeat center"></div>
+                    <div style="width:115px; height:100%; float: left; background:url(${var25}) no-repeat center"></div>
+                    <div style="width:95px; height:100%; float: left; background:url(${var26}) no-repeat right"></div>
 
                 </div>
             </div>
-        </div>
-        <div class="bannerbox">
-            <ul>
+            <!-- end social proofing-->
 
-                <li>
-
-                    <img src="//cdn2.hubspot.net/hub/120076/file-373604095-jpg/new_template/en-gfi-max-remote-server-monitoring-and-management_1.jpg?t=1425309934000" alt="hubspot_ppc-banners_asset_text.jpg">
-                    <p><strong>24/7 Remote Network Monitoring and Management: </strong>MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide.</p>
-                </li>
-
-
-                <li>
-
-                    <img src="//cdn2.hubspot.net/hub/120076/file-491990642-jpg/en-gfi-max-remote-device-management.jpg?t=1425309934000" alt="hubspot_ppc-banners_mobile_text.jpg">
-                    <p><strong>How MAX RemoteManagement will help YOU: </strong>It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you.</p>
-                </li>
-
-
-
-
-            </ul>
-
-        </div>
-
-
-        <div class="pointslist">
-            <div class="wrapper">
-                <ul>
-                    <li class="pointone">
-                        <span class="icon"></span>
-                        <h2>One Single Dashboard:</h2>
-                        <p>Shows status across all customer sites and equipment. Monitor/manage Connectivity - IP responding, ports open/closed, website responding; SNMP - Pre-defined and user-defined checks for NAS, UPS, switches, etc.</p>
-                    </li>
-                    <li class="pointtwo">
-                        <span class="icon"></span>
-                        <h2>Remote Monitoring and Management:</h2>
-                        <p> Monitor and manage Networking Devices - Switches, routers, etc.;  Bandwidth - Broadband, leased line, T1, and more.</p>
-                    </li>
-                    <li class="pointthree">
-                        <span class="icon"></span>
-                        <h2>Up and running in just 10 minutes.</h2>
-                        <p></p>
-                    </li>
-                    <li class="pointfour">
-                        <span class="icon"></span>
-                        <h2>Pay-as-you-go. No contracts.</h2>
-                        <p>.</p>
-                    </li>
-                </ul>
+            <div style="padding:0 24px 0 24px">
+                <div id="copyright">Copyright &copy; 2016 LOGICnow Ltd <br><br></div>
+                <div id="footerMenu" style="width:600px;">
+                    <a href="https://www.logicnow.com/contact-us" target="_blank">Contact us</a>
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.logicnow.com/sitemap" target="_blank">Sitemap</a>
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.logicnow.com/legal/privacy-policy" target="_blank">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.logicnow.com/cookie-policy" target="_blank">Cookie Policy</a>
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.logicnow.com/legal/copyright" target="_blank">Copyright Notice</a>
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.logicnow.com/legal/terms-of-use" target="_blank">Terms of Use</a>
+                </div>
+                <br/><br/>
             </div>
         </div>
-
-        <div style="padding:50px 0px 0px 40px">
-            <img src="//cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg?t=1425309934000">
-        </div>
-
-    </div>
-    <div id="footer">
-        <div class="leftfooter">© Copyright 2015 LogicNow</div>
-        <div class="rightfooter"></div>
     </div>
 </div>
 
-<script type="text/javascript">
 
-    var nav = $('<div class="nav" />');
-    nav.insertAfter('.bannerbox ul', '#content');
-    $('.bannerbox ul', '#content').cycle({
-        fx: 'scrollLeft',
-        timeout: 5000,
-        pager: nav
-    });
 
-</script>
-
-<!--SUPPORT SCRIPTS-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
-  
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--TEMPLATE CONTENT VARIABLES -->
+    <!-- Page content repository URL : http://pages.logicnow.com/rs/356-UVH-403/images/ -->
+
+    <meta class="mktoString" id="varPageTitle" mktoName="Page Title" default="LOGICnow.com" allowHtml="true"/>
+
+    <meta class="mktoString" id="varFavicon" mktoName="favicon" default="http://pages.logicnow.com/rs/356-UVH-403/images/favicon_logicnow.ico" allowHtml="true"/>
+    <meta class="mktoString" id="varHomeURL" mktoName="Home URL" default="http://logicnow.com" allowHtml="true"/>
+    <meta class="mktoString" id="varHeroImage" mktoName="Hero image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true"/>
+    <meta class="mktoString" id="varLogoImage" mktoName="Logo image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true"/>
+
+    <meta class="mktoString" id="varContactInfoCountryName1" mktoName="Contact country name 1" default="USA" allowHtml="true"/>
+    <meta class="mktoString" id="varContactInfoCountryPhone1" mktoName="Contact country phone 1" default="+1 (888) 243-4329" allowHtml="true"/>
+    <meta class="mktoString" id="varContactInfoCountryName2" mktoName="Contact country name 2" default="UK" allowHtml="true"/>
+    <meta class="mktoString" id="varContactInfoCountryPhone2" mktoName="Contact country phone 2" default="+44 (0) 1382 309040" allowHtml="true"/>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!--page-specific script -->
+    <!--<script type="text/javascript" src="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1.js"></script>-->
+    <script type="text/javascript" src="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/en-v6-max-managed-services-software_05fb3639c095c4d6ad58b277efc084f0639b7531.js"></script>
+
+    <!--optimizely-->
+    <script src="https://cdn.optimizely.com/js/176158810.js"></script>
+    <!--rummonitis-->
+    <script src='https://rum.monitis.com/get/jsbenchmark.min.js?id=5006' type='text/javascript' async='async'></script>
+
+
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- Basic Styles -->
+    <link href="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-general.css" rel="stylesheet" />
+    <link href="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-public-common.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic|Oswald:400,300,700" rel="stylesheet" type="text/css" />
+
+    <!--PAGE DATA-->
+    <title>${varPageTitle}</title>
+    <link rel="shortcut icon" href=${varFavicon} type="image/vnd.microsoft.icon">
+
+    <!--IN-LINE STYLING-->
+    <style>
+        #imgHead {
+            border-top: 2px solid #f1f2f2;
+            border-bottom: 2px solid #f1f2f2;
+
+        }
+
+        #content #rightcolumn h2 span {
+
+        }
+
+        #header {
+            position: relative;
+        }
+
+        .nojscript {
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            background-color: red;
+        }
+
+        label {
+            color: white;
+        }
+
+        a {
+            color: #027bc2;
+            text-decoration: none;
+        }
+
+        .pointslist_title {
+            padding: 30px 30px 0 50px;
+        }
+
+        .list {
+            /*color: #333333;
+            font-size: 16px;
+            font-family: "myriad-pro" "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+            background: url(http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/bullet_2ef7f1069ce8ea854e5cc0beda3d073dafc7828a-7.png) no-repeat 0px 4px;
+            list-style: none;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            background-color: #cf8221;
+        }
+
+        .logo div {
+            margin: 0px !important;
+        }
+
+        .ppc_header_title {
+            margin: 0px !important;
+        }
+
+        h2 {
+            font-weight: normal;
+            margin: 0px !important;
+            font-size: 1em;
+        }
+
+        .light_blue_arrow {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .light_blue_arrow li {
+            background-image: url(http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/5362843_bullet_352c58defa35ad157b11e411e99cf3e99feb38c7.png);
+            background-repeat: no-repeat;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+
+    <style>#formSub {
+        left: 4px;
+    }
+
+    #submit-button {
+        padding-left: 50px;
+        min-width: 84px;
+    }</style>
+
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M897H7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M897H7');</script>
+<!-- End Google Tag Manager -->
+
+<div class="sitecontainer">
+    <div id="header">
+
+        <div class="logo">
+            <h1><a href="http://www.maxfocus.com/remote-management"><img
+                    src="${varLogoImage}"
+                    alt="MAX Remote Management"></a></h1>
+        </div>
+
+        <div id="trustedBy">
+
+            <div id="lockIcon"></div>
+            Trusted by over 11,000 MSPs and IT Support companies
+
+        </div>
+
+    </div>
+
+    <div id="imgHead">
+        <div id="theImage">
+            <img src="//cdn2.hubspot.net/hub/120076/file-1677467999-jpg/max_extra/RM/V7/campaign_rm_ppc_devices.jpg?t=1425299359000"
+                 alt="hubspot_ppc-banners_asset_text.jpg">
+        </div>
+    </div>
+
+    <div id="content">
+
+
+        <div id="rightcolumn">
+
+            <h2><span>Get your FREE 30-day <br> Full Feature Trial</span></h2>
+
+            <div class="form">
+                <div id="form">
+
+                    <span id="hs_cos_wrapper_logicnowrmv7enpartner"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style=""
+                          data-hs-cos-general-type="widget" data-hs-cos-type="raw_html">
+
+                    <!--FORM GOES HERE-->
+                         <div class="mktEditable mktoText" id="aboveFormText" mktoName="Above Form Text"></div>
+                         <div class="mktoForm" id="sideForm" mktoName="Sidebar Form"></div>
+                     <!--!FORM GOES HERE!-->
+
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="leftcolumn">
+
+            <div class="lcWhiteBox">
+                <div class="boxTitle">Everything you need in a single dashboard:</div>
+                <div class="boxText">
+                    <ul style="padding-left:20px">
+                        <li>Proactive remote monitoring
+                        </li>
+                        <li>Remote access, support and background management
+                        </li>
+                        <li>Proactive automated maintenance
+                        </li>
+                        <li>Workstation management
+                        </li>
+                        <li>Managed Online Backup
+                        </li>
+                        <li>Managed Antivirus
+                        </li>
+                        <li>Mobile Device Management
+                        </li>
+                        <li>ServiceDesk
+                        </li>
+                        <li>App Control
+                        </li>
+                        <li>Patch management
+                        </li>
+                        <li>Integration with PSA and other MSP systems
+                        </li>
+                        <li>Asset tracking
+                        </li>
+                        <li>Alerting and viewing
+                        </li>
+                        <li>Systems reporting
+                        </li>
+                        <li>Pre-packaged services
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="middlecolumn">
+
+
+            <div class="main_body">
+
+                <span class="bannerMainTitle">Managed IT Services Software</span> <span class="bannerMainContent">...100% designed for MSPs &amp; IT Support guys just like you!</span>
+                <br><br>
+
+                <p></p>
+
+                <h3>How MAX RemoteManagement will help YOU:</h3>
+
+                <p></p>
+                <ul style="padding-left:20px">
+                    <li><strong>Monitoring:</strong> Servers, workstations, exchange, network equipment and
+                        connectivity.
+                    </li>
+                    <li><strong>Pro-active Maintainenance:</strong> Servers &amp; desktops. Automation, patching,
+                        restart services, etc.
+                    </li>
+                    <li><strong>Remote Support:</strong> Servers &amp; desktops. Rapid user assistance and remote
+                        maintenance.
+                    </li>
+                    <li><strong>Asset Tracking - Hardware, Software:</strong> Comprehensive reporting with electronic
+                        extract.
+                    </li>
+                    <li><strong>Customer Reporting:</strong> Automatic reporting on faults, status. Daily, weekly,
+                        monthly.
+                    </li>
+                    <li><strong>Alerting and Viewing:</strong> Single Web-based dashboard, NOC view, SMS, email &amp;
+                        mobile phone.
+                    </li>
+                    <li><strong>Fully brandable:</strong> All customer touch points can be branded.</li>
+                </ul>
+                <p></p>
+
+                <p>It's a pay as you use, hosted system with no initial hardware or software investment with no minimum
+                    quantities and no lock in. And best of all, its setup and delivering for your customers within
+                    minutes.
+                </p>
+
+                <h3>MAX RemoteManagement helps thousands of IT Support Companies, Consultants and MSPs:</h3>
+
+                <p></p>
+                <ul style="padding-left:20px">
+                    <li>Deliver awesome IT Support and increase uptime to customers</li>
+                    <li>Promote, develop and increase sales within their businesses</li>
+                    <li>Operate their businesses more profitably</li>
+                    <li>Reduce threats to their businesses</li>
+                </ul>
+                <p></p>
+
+                <p></p>
+
+
+            </div>
+
+
+            <div class="pointslist">
+                <div class="wrapper">
+                    <ul>
+                        <li class="pointone">
+                            <span class="icon"></span>
+
+                            <p>Comprehensive but<br>not complex</p>
+
+                        </li>
+                        <li class="pointtwo">
+                            <span class="icon"></span>
+
+                            <p>We help you grow<br>your business</p>
+
+                        </li>
+                        <li class="pointthree">
+                            <span class="icon"></span>
+
+                            <p>Up and running in<br>just 10 minutes</p>
+
+                        </li>
+                        <li class="pointfour">
+                            <span class="icon"></span>
+
+                            <p>Pay-as-you-go.<br>No contracts</p>
+
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="awardsImg">
+        <img src="//cdn2.hubspot.net/hub/120076/file-2120585441-jpg/max_extra/com_imgs/rm_v7_awards.jpg?t=1425299359000">
+    </div>
+
+    <div id="contactArea">
+
+        <div>+44 (0) 1382 309040</div>
+        <div>info@maxfocus.com</div>
+        <div class="last">www.maxfocus.com</div>
+
+    </div>
+
+    <div id="footer">
+        <div><img
+                src="//cdn2.hubspot.net/hub/120076/file-2121434257-png/max_extra/com_imgs/footer_logo.png?t=1425299359000"
+                alt="MAXfocus"></div>
+        <div>
+
+            The Vision Building, 20 Greenmarket, Dundee, DD1 4QB. Scotland. Telephone: +44 (0) 1382 309040<br><br>
+            Copyright © 2015 LogicNow. All rights reserved. All product and company names herein may be trademarks of
+            their respective owners.<br>
+            To the best of our knowledge, all details were correct at the time of publishing; this information is
+            subject to change without notice.
+
+        </div>
+    </div>
+
+    <div style="clear:both"></div>
+</div>
+
+</body>
+</html>
