@@ -13,60 +13,116 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- BEGIN TypeKit -->
+    <script src="https://use.typekit.net/pcv5rqq.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+        console.log("typekit exception");
+    }</script>
+    <!-- END TypeKit -->
+
     <!--TEMPLATE CONTENT VARIABLES -->
     <!-- Page content repository URL : http://pages.logicnow.com/rs/356-UVH-403/images/ -->
 
     <meta class="mktoString" id="varPageTitle" mktoName="Page Title" default="LOGICnow.com" allowHtml="true"/>
 
+    <meta class="mktoString" id="varPageSpecificScript" mktoName="Page-specific javascript URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1.js" allowHtml="true"/>
+    <meta class="mktoString" id="varJquery" mktoName="jQuery javascript URL" default="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" allowHtml="true"/>
+    <meta class="mktoString" id="varOptimizelyScript" mktoName="Optimizely javascript URL" default="https://cdn.optimizely.com/js/176158810.js" allowHtml="true"/>
+    <meta class="mktoString" id="varRumMonitisScript" mktoName="rum.monitis javascript URL" default="https://rum.monitis.com/get/jsbenchmark.min.js?id=5006" allowHtml="true"/>
+
+    <meta class="mktoString" id="varBootstrapCSS" mktoName="BootStrap CSS URL" default="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet1" mktoName="Stylesheet #1 URL" default="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet2" mktoName="Stylesheet #2 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-general.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet3" mktoName="Stylesheet #3 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-public-common.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet4" mktoName="Stylesheet #4 URL" default="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic|Oswald:400,300,700" allowHtml="true"/>
+
+    <meta class="mktoString" id="varInlineStyling" mktoName="Additional inline styling (use script tags)" default="" allowHtml="true"/>
+
     <meta class="mktoString" id="varFavicon" mktoName="favicon" default="http://pages.logicnow.com/rs/356-UVH-403/images/favicon_logicnow.ico" allowHtml="true"/>
-    <meta class="mktoString" id="varHomeURL" mktoName="Home URL" default="http://logicnow.com" allowHtml="true"/>
-    <meta class="mktoString" id="varHeroImage" mktoName="Hero image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true"/>
-    <meta class="mktoString" id="varLogoImage" mktoName="Logo image URL" default="http://cdn2.hubspot.net/hub/120076/landing-pages-test/resources/gfi_branding_tab_c9aace27d999585e881d23642ce169c271fb1c34.png" allowHtml="true"/>
+    <meta class="mktoString" id="varHomeURL" mktoName="Home URL" default="https://www.logicnow.com/" allowHtml="true"/>
+    <meta class="mktoString" id="varLogoImage" mktoName="Logo image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/max-bylogicnow-logo.png" allowHtml="true"/>
 
     <meta class="mktoString" id="varContactInfoCountryName1" mktoName="Contact country name 1" default="USA" allowHtml="true"/>
     <meta class="mktoString" id="varContactInfoCountryPhone1" mktoName="Contact country phone 1" default="+1 (888) 243-4329" allowHtml="true"/>
     <meta class="mktoString" id="varContactInfoCountryName2" mktoName="Contact country name 2" default="UK" allowHtml="true"/>
     <meta class="mktoString" id="varContactInfoCountryPhone2" mktoName="Contact country phone 2" default="+44 (0) 1382 309040" allowHtml="true"/>
 
+    <meta class="mktoString" id="varHeroImage1" mktoName="Hero #1 image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/en-gfi-max-remote-server-monitoring-and-management_1.jpg" allowHtml="true"/>
+    <meta class="mktoString" id="varHeroHeader1" mktoName="Hero #1 header" default="24/7 Remote Network Monitoring and Management: " allowHtml="true"/>
+    <meta class="mktoString" id="varHeroCopy1" mktoName="Hero #1 copy" default="MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide." allowHtml="true"/>
+
+    <meta class="mktoString" id="varHeroImage2" mktoName="Hero #2 image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/en-gfi-max-remote-device-management.jpg" allowHtml="true"/>
+    <meta class="mktoString" id="varHeroHeader2" mktoName="Hero #2 header" default="How MAX RemoteManagement will help YOU: " allowHtml="true"/>
+    <meta class="mktoString" id="varHeroCopy2" mktoName="Hero #2 copy" default="It helps deliver increased uptime to customers by quick, easy monitoring of networking equipment and connectivity - leading to increased customer satisfaction and revenue for you." allowHtml="true"/>
+
+    <meta class="mktoString" id="varTitlePoint1" mktoName="Point #1 title" default="One Single Dashboard:" allowHtml="true"/>
+    <meta class="mktoString" id="varCopyPoint1" mktoName="Point #1 copy" default="Shows status across all customer sites and equipment. Monitor/manage Connectivity - IP responding, ports open/closed, website responding; SNMP - Pre-defined and user-defined checks for NAS, UPS, switches, etc." allowHtml="true"/>
+
+    <meta class="mktoString" id="varTitlePoint2" mktoName="Point #2 title" default="Remote Monitoring and Management:" allowHtml="true"/>
+    <meta class="mktoString" id="varCopyPoint2" mktoName="Point #2 copy" default="Monitor and manage Networking Devices - Switches, routers, etc.; Bandwidth - Broadband, leased line, T1, and more." allowHtml="true"/>
+
+    <meta class="mktoString" id="varTitlePoint3" mktoName="Point #3 title" default="Up and running in just 10 minutes." allowHtml="true"/>
+    <meta class="mktoString" id="varCopyPoint3" mktoName="Point #3 copy" default="" allowHtml="true"/>
+
+    <meta class="mktoString" id="varTitlePoint4" mktoName="Point #4 title" default="Pay-as-you-go. No contracts." allowHtml="true"/>
+    <meta class="mktoString" id="varCopyPoint4" mktoName="Point #4 copy" default="" allowHtml="true"/>
+
+    <meta class="mktoString" id="varAwardsImage" mktoName="Awards image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm_v5_awards.jpg" allowHtml="true"/>
+
+    <meta class="mktoString" id="varFormHeader" mktoName="Form header copy" default="Get your FREE 30-day Full Feature Trial" allowHtml="true"/>
+    <meta class="mktoString" id="varFormFooter" mktoName="Form footer copy" default="Join thousands of MSPs and IT support companies already thriving with LogicNow." allowHtml="true"/>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!--slider box script -->
-    <script type="text/javascript" src="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1.js"></script>
+    <script src=${varJquery}></script>
+    <!--page-specific script -->
+    <script type="text/javascript" src=${varPageSpecificScript}></script>
     <!--optimizely-->
-    <script src="https://cdn.optimizely.com/js/176158810.js"></script>
+    <script src=${varOptimizelyScript}></script>
     <!--rummonitis-->
-    <script src='https://rum.monitis.com/get/jsbenchmark.min.js?id=5006' type='text/javascript' async='async'></script>
-
+    <script src=${varRumMonitisScript} type='text/javascript' async='async'></script>
 
 
     <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href=${varBootstrapCSS} rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href=${varStylesheet1} rel="stylesheet" />
 
     <!-- Basic Styles -->
-    <link href="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-general.css" rel="stylesheet" />
-    <link href="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1-public-common.css" rel="stylesheet" />
+    <link href=${varStylesheet2} rel="stylesheet" />
+    <link href=${varStylesheet3} rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic|Oswald:400,300,700" rel="stylesheet" type="text/css" />
+    <link href=${varStylesheet4} rel="stylesheet" type="text/css" />
 
     <!--PAGE DATA-->
     <title>${varPageTitle}</title>
     <link rel="shortcut icon" href=${varFavicon} type="image/vnd.microsoft.icon">
 
     <style>
+        a img {
+            height: 64px;
+        }
         .mktoForm {
             padding-bottom: 20px !important;
         }
         .mktoForm .mktoButtonRow .mktoButtonWrap {
             margin-left: 80px !important;
         }
+        .bannerbox ul {
+            position: relative !important;
+            width: 600px !important;
+            height: 536px !important;
+            overflow: hidden !important;
+        }
     </style>
 
+    ${varInlineStyling}
+
 </head>
-<body style="font-family: 'Open Sans', sans-serif;">
+<body>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M897H7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M897H7');</script>
@@ -75,17 +131,15 @@
 <div class="sitecontainer">
     <div id="header">
         <div class="logo">
-            <h1 style="height:90px;"><a href="https://www.maxfocus.com"><img
-                    src="//cdn2.hubspot.net/hub/120076/file-2373401000-png/images/max_focus_remote_management_logo.png?t=1425309934000"></a>
+            <h1 style="height:90px;">
+                <a href=${varHomeURL}>
+                    <img src=${varLogoImage}>
+                </a>
             </h1>
         </div>
-        <div class="heroimage" style="background-image: url( ${varHeroImage} );"></div>
 
         <div class="contactdetails">
-
-            <p>Need assistance? Call: ${varContactInfoCountryName1} <strong>${varContactInfoCountryPhone1}</strong>
-                ${varContactInfoCountryName2} <strong>${varContactInfoCountryPhone2}</strong></p>
-
+            <p>Need assistance? Call: ${varContactInfoCountryName1} <strong>${varContactInfoCountryPhone1}</strong> ${varContactInfoCountryName2} <strong>${varContactInfoCountryPhone2}</strong></p>
         </div>
     </div>
 
@@ -93,60 +147,40 @@
         <div id="rightcolumn">
             <div class="form">
                 <div id="form">
-                    <h2>
-                        <span>Get your FREE 30-day Full Feature Trial</span>
-                    </h2>
-          
-         <span id="hs_cos_wrapper_trial_form"
-               class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style=""
-               data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container"><div
-                 id="hs_cos_wrapper_widget_2375404004"
-                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_global_widget hs_global_widget"
-                 style="" data-hs-cos-general-type="widget" data-hs-cos-type="global_widget">
-
-             <!--FORM GOES HERE-->
-             <!--<aside class="col-xs-12 col-sm-4 col-md-3 bg-gray-40 sm-overset-200 md-overset-200 lg-overset-200 box-500 border-5 mktEditable" id="form">-->
-             <div class="mktEditable mktoText" id="aboveFormText" mktoName="Above Form Text"></div>
-             <div class="mktoForm" id="sideForm" mktoName="Sidebar Form">
-
-             </div>
-             <!--!FORM GOES HERE!-->
-
-
-             <!--<script type="text/javascript" src="http://trials.maxfocus.com/hs-fs/hub/120076/file-2370086740-js/max_extra/RM/V7/js/promo.js"></script>-->
-         </div>
-         </span>
-
-
-                    <p class="subtext"> Join thousands of MSPs and IT support companies already thriving with
-                        LogicNow. </p>
-
+                    <h2><span>${varFormHeader}</span></h2>
+                    <span id="hs_cos_wrapper_trial_form"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container"
+                          style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container">
+                        <div id="hs_cos_wrapper_widget_2375404004"
+                          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_global_widget hs_global_widget"
+                          style="" data-hs-cos-general-type="widget" data-hs-cos-type="global_widget">
+                             <!--FORM GOES HERE-->
+                             <div class="mktEditable mktoText" id="aboveFormText" mktoName="Above Form Text"></div>
+                             <div class="mktoForm" id="sideForm" mktoName="Sidebar Form"></div>
+                             <!--!FORM GOES HERE!-->
+                        </div>
+                    </span>
+                    <p class="subtext">${varFormFooter}</p>
                 </div>
             </div>
         </div>
+
         <div class="bannerbox">
             <ul>
-
                 <li>
+                    <img src=${varHeroImage1}
+                         alt="max-remote-server-monitoring-and-management.jpg">
 
-                    <img src="//cdn2.hubspot.net/hub/120076/file-373604095-jpg/new_template/en-gfi-max-remote-server-monitoring-and-management_1.jpg"
-                         alt="hubspot_ppc-banners_asset_text.jpg">
-
-                    <p><strong>24/7 Remote Network Monitoring and Management: </strong>MAX RemoteManagement provides
-                        Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and
-                        MSPs
-                        worldwide.</p>
+                    <p><strong>${varHeroHeader1}</strong>${varHeroCopy1}</p>
                 </li>
 
 
                 <li>
 
-                    <img src="//cdn2.hubspot.net/hub/120076/file-491990642-jpg/en-gfi-max-remote-device-management.jpg"
-                         alt="hubspot_ppc-banners_mobile_text.jpg">
+                    <img src=${varHeroImage2}
+                         alt="max-remote-device-management.jpg">
 
-                    <p><strong>How MAX RemoteManagement will help YOU: </strong>It helps deliver increased uptime to
-                        customers by quick, easy monitoring of networking equipment and connectivity - leading to
-                        increased customer satisfaction and revenue for you.</p>
+                    <p><strong>${varHeroHeader2}</strong>${varHeroCopy2}</p>
                 </li>
 
 
@@ -160,41 +194,30 @@
                 <ul>
                     <li class="pointone">
                         <span class="icon"></span>
-
-                        <h2>One Single Dashboard:</h2>
-
-                        <p>Shows status across all customer sites and equipment. Monitor/manage Connectivity - IP
-                            responding, ports open/closed, website responding; SNMP - Pre-defined and user-defined
-                            checks for NAS, UPS, switches, etc.</p>
+                        <h2><strong>${varTitlePoint1}</strong></h2>
+                        <p>${varCopyPoint1}</p>
                     </li>
                     <li class="pointtwo">
                         <span class="icon"></span>
-
-                        <h2>Remote Monitoring and Management:</h2>
-
-                        <p> Monitor and manage Networking Devices - Switches, routers, etc.; Bandwidth - Broadband,
-                            leased line, T1, and more.</p>
+                        <h2><strong>${varTitlePoint2}</strong></h2>
+                        <p>${varCopyPoint2}</p>
                     </li>
                     <li class="pointthree">
                         <span class="icon"></span>
-
-                        <h2>Up and running in just 10 minutes.</h2>
-
-                        <p></p>
+                        <h2><strong>${varTitlePoint3}</strong></h2>
+                        <p>${varCopyPoint3}</p>
                     </li>
                     <li class="pointfour">
                         <span class="icon"></span>
-
-                        <h2>Pay-as-you-go. No contracts.</h2>
-
-                        <p>.</p>
+                        <h2><strong>${varTitlePoint4}</strong></h2>
+                        <p>${varCopyPoint4}</p>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div style="padding:50px 0px 0px 40px">
-            <img src="//cdn2.hubspot.net/hub/120076/file-2508565774-jpg/max_extra/RM/V5/imgs/rm_v5_awards.jpg?t=1425309934000">
+            <img src=${varAwardsImage}>
         </div>
 
     </div>
