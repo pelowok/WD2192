@@ -1,0 +1,132 @@
+#noscript_error{
+    background-color:red;
+    display:absolute;
+    position: top left;
+    margin-bottom:20px;
+    padding: 20px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+
+.custom_error, #errorMsg{
+    background-color:red;
+    color:white;
+    padding:5px;
+    margin:5px 0 5px 0;
+}
+
+.placeholder{
+    color:grey;
+}
+
+#errorMsg{
+    margin:0px 0px 10px 0px;
+}
+
+#max_opt_in{
+    margin:0px !important;
+    padding:0px;
+}
+
+#max_opt_in_text{
+    float:right;
+    width:90%;
+    color:white;
+}
+
+#content .pointslist ul li .icon {
+    background-image: url(http://trials.maxfocus.com/hs-fs/hub/120076/file-2413876541-png/max_extra/Backup/v7/v7-backup-icons.png)
+}
+/*
+#content .pointslist ul li.pointtwo .icon {
+	background-position: 50% -57px;
+}
+
+#content .pointslist ul li.pointthree .icon {
+	background-position: 50% -113px;
+}
+
+#content .pointslist ul li.pointfour .icon {
+	background-position: 50% -175px;
+	width: 80px;*/
+}
+
+/* corner message */
+
+#corner-banner {
+    display: block;
+}
+
+#corner-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#corner-banner a.de {
+    background: rgba(0, 0, 0, 0) url(http://trials.maxfocus.com/hs-fs/hub/120076/file-2415782860-png/max_extra/Backup/v7/cta_new-release_de.png) top left no-repeat;
+}
+
+#corner-banner a.en {
+    background: rgba(0, 0, 0, 0) url(http://trials.maxfocus.com/hs-fs/hub/120076/file-2413876556-png/max_extra/Backup/v7/cta_new-release.png) top left no-repeat;
+}
+
+#corner-banner a {
+    display: block;
+    height: 201px;
+    width: 183px;
+    text-indent: -1000em;
+}
+
+/* box under the form */
+
+#content .underformbox {
+    margin-top:40px;
+    padding: 19px;
+    border: 8px solid #fff;
+    width: 245px;
+    font-size: 0.875em;
+    -moz-box-shadow: 0px 3px 12px #9b9b9b;
+    -webkit-box-shadow: 0px 3px 12px #9b9b9b;
+    box-shadow: 0px 3px 12px #9b9b9b;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#9b9b9b')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#9b9b9b');
+    background: #e8e4e2 url(../imgs/backup_download_pdf.png) no-repeat left top;
+    height:90px;
+}
+
+#content .underformbox .download_title {
+    float: right;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+#content .underformbox .download_title a {
+    color:#7eb942;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.rfp_link {
+    text-align: center;
+    font-weight: bold;
+}
+
+.rfp_link a{
+    color:#7eb942;
+}
+
+button.submit{
+    margin-top:0px;
+}
+
+.subtext{
+    text-align:right;
+    color:white;
+}

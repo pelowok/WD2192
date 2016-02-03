@@ -1,0 +1,1712 @@
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+/* Loading sequence */
+.loadingInProgress:before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: transparent url(../img/spinner.svg) no-repeat top left;
+  background-size: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  -webkit-animation: loader 1s linear infinite;
+  animation: loader 1s linear infinite;
+}
+
+#jive-note-user-body-2 {
+  left: 50% !important;
+  top: 50% !important;
+  position: fixed !important;
+  transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%) !important;
+  /* Safari */
+  margin: 0px !important;
+}
+#jive-note-user-body-2 .status-tile a:focus .status-label, #jive-note-user-body-2 .status-tile a:hover .status-label {
+  color: #0088cc;
+  text-decoration: underline !important;
+}
+#jive-note-user-body-2 .reward-tile a:focus .status-image path, #jive-note-user-body-2 .reward-tile a:hover .status-image path {
+  stroke: #0088cc !important;
+}
+#jive-note-user-body-2 a.view-more:focus {
+  text-decoration: underline !important;
+}
+
+/* Pop up me */
+.cntr-popup div.j-pop {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  border-radius: 14px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+  border: 1px solid #444;
+  left: 50% !important;
+  top: 50% !important;
+  position: fixed !important;
+  transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%) !important;
+  /* Safari */
+}
+.cntr-popup div.j-pop.j-pop-visible2 {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+.cntr-popup div.j-pop #j-satNav-menu {
+  display: table-cell !important;
+  border-radius: 10px;
+  height: auto;
+  position: relative;
+  max-width: 390px;
+  min-height: 496px;
+  max-height: 582px;
+  padding: 0px;
+  overflow: hidden;
+}
+.cntr-popup div.j-pop #j-satNav-menu .mini-prof-wraper {
+  height: auto;
+  width: 390px;
+}
+.cntr-popup div.j-pop #j-satNav-menu .mini-prof-wraper .modal-overflow .modal-container .footer-container {
+  text-align: center;
+  line-height: 1.5em;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-overflow {
+  border-radius: 0px;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content {
+  padding: 15px;
+  border: 0px;
+  display: inline-block !important;
+  vertical-align: top;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .close-modal {
+  z-index: 3;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .j-user-profile .j-status-levels .level-points {
+  vertical-align: middle;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .j-user-profile .j-user-name {
+  max-width: 100%;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .j-user-profile .j-user-name:focus, .cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .j-user-profile .j-user-name:hover {
+  color: #111111;
+  text-decoration: none;
+  cursor: default;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .status-row.expertise {
+  min-height: 49px;
+}
+.cntr-popup div.j-pop #j-satNav-menu .modal-container .j-modal-content .status-row li a.j-selected .status-label {
+  color: #0088cc;
+  text-decoration: underline !important;
+}
+
+div#jive-note-body {
+  width: 360px;
+}
+div#jive-note-body .footer-container {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.lb_overlay {
+  opacity: 0 !important;
+}
+
+.j-satellite-links {
+  border-top: 1px solid #e1e1e1;
+  padding: 10px 0;
+}
+.j-satellite-links h3.j-nav-menu-section {
+  padding-left: 0px;
+  color: #333333;
+}
+.j-satellite-links.j-menu li {
+  padding: 0px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.j-satellite-links.j-menu li a {
+  padding: 0px 9px;
+  font-size: 11px;
+  font-weight: normal;
+  border-left: 1px solid #0088cc !important;
+}
+.j-satellite-links.j-menu li a#jive-nav-link-profile-edit {
+  border-left: none !important;
+  padding-left: 0px;
+}
+.j-satellite-links.j-menu li a:active {
+  text-decoration: none !important;
+}
+.j-satellite-links.j-menu li a.j-selected {
+  text-decoration: underline !important;
+}
+.j-satellite-links.j-menu li a:hover {
+  text-decoration: underline !important;
+}
+.j-satellite-links.j-menu li:first-child a {
+  padding-left: 0px;
+  border-left: none !important;
+}
+
+#j-satNav-menu h3.j-nav-menu-section {
+  padding-left: 0px;
+  color: #333333;
+}
+#j-satNav-menu section {
+  padding: 0px;
+  max-width: 100%;
+}
+#j-satNav-menu .j-other-info .j-status-levels .level-points span {
+  display: none;
+}
+#j-satNav-menu .j-user-profile,
+#j-satNav-menu .j-satellite-links {
+  display: block;
+  width: 360px;
+  float: none;
+  max-width: 100%;
+  border: none;
+}
+#j-satNav-menu .j-satellite-links {
+  margin-left: 0px;
+  border-top: 1px solid #e1e1e1;
+}
+#j-satNav-menu .j-user-profile {
+  text-align: center;
+}
+#j-satNav-menu .sansbeta {
+  display: none;
+}
+#j-satNav-menu .j-user-photo {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+#j-satNav-menu .j-user-photo img {
+  border: none;
+  height: 100%;
+  width: auto;
+}
+#j-satNav-menu .j-user-photo::after {
+  position: realtive;
+  content: none;
+}
+#j-satNav-menu .text-center {
+  text-align: center;
+  padding: 5px 0 10px;
+}
+#j-satNav-menu .j-view-profile {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.bottom-wrapper h3 {
+  margin-top: 0;
+}
+
+.status-row {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  clear: both;
+}
+.status-row h3 {
+  display: block;
+  font-size: 12px;
+  padding: 0px;
+  line-height: 1.25em;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.status-row a.view-more {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.status-row a.view-more.j-selected {
+  text-decoration: underline !important;
+}
+.status-row a.view-more:focus, .status-row a.view-more:active {
+  text-decoration: none;
+}
+.status-row a.view-more:hover {
+  text-decoration: underline;
+}
+.status-row > .status-image {
+  float: none;
+  margin-right: 5px;
+}
+.status-row > .status-tile {
+  margin-bottom: 10px;
+}
+
+.target-mission {
+  -webkit-transition: opacity 0.04s ease-in-out;
+  -moz-transition: opacity 0.04s ease-in-out;
+  -ms-transition: opacity 0.04s ease-in-out;
+  -o-transition: opacity 0.04s ease-in-out;
+  transition: opacity 0.04s ease-in-out;
+}
+
+.status-tile .status-label {
+  line-height: 1em;
+}
+.status-tile .status-level {
+  margin-top: 3px;
+  height: 3px;
+  width: 80px;
+  margin-left: 3px;
+}
+
+/* Avatar inline status and expertise */
+body .j-layout .j-post-avatar .j-avatar {
+  display: block;
+  margin-bottom: 5px;
+  width: 69px;
+}
+body .j-layout .j-post-avatar .j-status-level {
+  font-size: 10px;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  margin-bottom: -5px;
+  line-height: 1.5em;
+}
+body .j-layout .j-post-avatar .j-status-level .status-image {
+  float: none;
+  margin-right: 0px;
+}
+body .j-layout .j-post-avatar .j-status-level .level-points {
+  display: block;
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+.j-byline.font-color-meta {
+  white-space: nowrap;
+}
+.j-byline.font-color-meta .j-status-level {
+  float: left;
+  width: 104px;
+}
+.j-byline.font-color-meta .j-status-level .level-points, .j-byline.font-color-meta .j-status-level .status-image {
+  line-height: 30px;
+}
+
+.j-status-level.expertise-tile {
+  float: left;
+}
+
+.j-thread-post > header .j-post-avatar .jive-avatar {
+  display: block;
+}
+
+.status-wrapper span.status-label {
+  display: none;
+}
+
+.status-tile {
+  width: 49%;
+  display: inline-block;
+  veritcal-align: top;
+}
+.status-tile .status-image {
+  float: left;
+  margin-right: 10px;
+}
+
+.target-mission {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.j-status-level {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  color: #000;
+  display: inline-block;
+  line-height: 2em;
+}
+
+.j-profile-extended-data .status-image {
+  margin-top: -8px;
+}
+
+.status-image {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  text-align: left;
+  float: left;
+  margin-bottom: -10px;
+}
+.status-image img {
+  width: 100%;
+  height: auto;
+}
+
+.status-label {
+  display: inline-block;
+  white-space: nowrap;
+  color: #777777;
+  line-height: 2.4em;
+}
+
+.target-mission {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.target-reward {
+  cursor: pointer;
+}
+
+.modal-overflow {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.modal-container {
+  width: 1500px;
+  background: #fff;
+}
+.modal-container .j-modal-content {
+  width: 360px;
+  min-height: 476px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.modal-container .j-modal-content .j-user-profile .j-other-info .j-status-levels .level-points span {
+  display: none;
+}
+.modal-container.transition-type-a {
+  overflow: hidden;
+}
+.modal-container.transition-type-a .j-modal-content.mission-track {
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: auto;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.modal-container.transition-type-a .j-modal-content.mission-track.show {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Adjust SVG color */
+.expertise-tile .status-image.false img,
+.expertise-tile .mission-image.false img {
+  opacity: 0;
+}
+.expertise-tile .status-image.false path,
+.expertise-tile .mission-image.false path {
+  fill: #c0c0c0;
+}
+
+.reward-tile .status-image.false img,
+.reward-tile .mission-image.false img {
+  opacity: 0;
+}
+.reward-tile .status-image.false path,
+.reward-tile .mission-image.false path {
+  stroke: #c0c0c0;
+}
+
+.reward-tile a.j-selected {
+  opacity: 1;
+}
+.reward-tile a.j-selected .status-image path {
+  stroke: #0088cc !important;
+}
+
+.footer-container {
+  padding: 8px 0 10px;
+  bottom: 0px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+/* Pop up them */
+.j-mini-modal-user .j-mini-modal-header {
+  padding-left: 0px;
+  text-align: center;
+}
+.j-mini-modal-user .j-modal-content table {
+  width: 100%;
+}
+.j-mini-modal-user .j-modal-content table td:first-child {
+  width: 140px !important;
+}
+
+.close-modal,
+.close-me {
+  background: transparent url(../img/iconClose.png) no-repeat top left;
+  position: absolute;
+  z-index: auto;
+  background-size: 100%;
+  height: 22px;
+  width: 15px;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+.mission-track .close-modal,
+.mission-track .close-me {
+  background-position: -5px -24px;
+}
+
+.transition-type-a .mission-track .close-modal,
+.transition-type-a .mission-track .close-me {
+  background-position: 0 0;
+}
+
+a.footer-link {
+  width: 100%;
+  text-align: center;
+}
+
+.jive-tooltip2 {
+  width: 404px;
+}
+.jive-tooltip2 .j-mini-modal-user {
+  width: 390px;
+  position: relative;
+}
+.jive-tooltip2 .j-mini-modal-user .modal-container .j-modal-content .j-status-level .level-points span {
+  display: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content {
+  width: 360px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  padding: 15px;
+  color: #777777;
+  border: 0px;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content .j-status-level {
+  line-height: 2.5em;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content .j-profile-photo-wrap {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  padding: 0px;
+  overflow: hidden;
+  margin: 10px auto 20px;
+  border: 1px solid #ccc;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content .j-profile-photo-wrap img.j-profile-photo {
+  position: relative;
+  width: 100%;
+  top: 0;
+  height: auto;
+  border: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content h5 {
+  padding-top: 0px;
+  font-size: 20px;
+  color: #333333;
+  line-height: 1.2em;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content h5 a {
+  color: #111111;
+  text-decoration: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content h5 a:focus, .jive-tooltip2 .j-mini-modal-user .j-modal-content h5 a:hover {
+  text-decoration: none;
+  color: #111111;
+  cursor: default;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content .j-mini-modal-header p {
+  font-size: 12px;
+  line-height: 1.25em;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content .j-modal-buttons {
+  margin: 20px 0 0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table {
+  margin-bottom: 5px;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td:first-child {
+  width: auto !important;
+  font-weight: normal;
+  text-align: center;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td:first-child strong {
+  color: #333333;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td {
+  line-height: 1.3636em;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td a {
+  color: #777777;
+  text-decoration: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td a:hover {
+  text-decoration: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-content table td .status-label span {
+  display: none;
+}
+.jive-tooltip2 .j-mini-modal-user .j-follow-user-link + .j-view-profile {
+  margin-left: 10px;
+}
+.jive-tooltip2 .j-mini-modal-user .j-modal-buttons > div, .jive-tooltip2 .j-mini-modal-user .j-modal-buttons > a {
+  vertical-align: top;
+}
+
+#jive-note-user-body-mission {
+  z-index: 3;
+}
+
+#jive-note-user-body-reward {
+  z-index: 4;
+}
+
+.lb_overlay,
+.lb_overlay_clear {
+  z-index: auto;
+}
+
+.j-thread-post > header .j-post-avatar {
+  left: -95px;
+}
+
+.show-status {
+  display: block;
+}
+
+.apple-status {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  color: #777777;
+  display: block;
+  width: 80px;
+}
+.apple-status .jive-username-link {
+  display: block;
+  margin: 0 auto 15px;
+  cursor: pointer;
+}
+.apple-status .level-row {
+  display: block;
+  clear: both;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.apple-status .level-row .level-img {
+  width: 28px;
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+}
+.apple-status .level-row .level-img img {
+  width: 100%;
+  height: auto;
+}
+.apple-status .level-row .level-label {
+  line-height: 2.5em;
+  white-space: nowrap;
+}
+.apple-status .icon-more {
+  margin: 0 auto;
+  background-position: -154px -424px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.j-mini-modal-user .j-mini-modal-header {
+  padding-left: 0px;
+  text-align: center;
+}
+.j-mini-modal-user table .status-image {
+  width: 28px;
+  height: 28px;
+}
+.j-mini-modal-user .j-modal-content table td:first-child {
+  width: 140px !important;
+}
+
+.status-content .level-row {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 30px;
+  padding: 10px 0;
+}
+
+.status-row {
+  border-top: 1px solid #e1e1e1;
+  padding: 10px 0;
+}
+.status-row.reward-tile .status-image {
+  float: none;
+  margin-right: 9px;
+}
+.status-row.reward-tile a:last-child .status-image {
+  margin-right: 0px;
+}
+.status-row.expertise > .status-tile {
+  margin-bottom: 15px;
+}
+
+.container-row {
+  border-bottom: 1px solid #e1e1e1;
+  height: 30px;
+  padding: 10px 0;
+}
+
+.level-img {
+  display: inline-block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+.level-img img {
+  width: 100%;
+}
+
+.level-label {
+  line-height: 2.5em;
+}
+
+.level-cell {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.jiveCard {
+  display: block;
+  cursor: pointer;
+}
+
+.j-pop .j-menu li a:active,
+.j-pop .j-menu li a:focus,
+.j-pop .j-menu li.j-selected a {
+  background: none;
+  outline: 0;
+  filter: none;
+  box-shadow: none;
+  border: none;
+  color: #08C;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+.j-pop .j-menu li a.j-selected {
+  text-decoration: underline;
+}
+
+a.j-social-button.j-view-profile.j-ui-elem span {
+  text-transform: capitalize;
+}
+
+.j-pop.js-pop.popover.j-pop-visible2, #jive-note-user-body-2 {
+  height: auto !important;
+}
+.j-pop.js-pop.popover.j-pop-visible2 .jive-tooltip2-mid.j-mini-modal.j-mini-modal-user, #jive-note-user-body-2 .jive-tooltip2-mid.j-mini-modal.j-mini-modal-user {
+  border-radius: 13px;
+}
+
+@media screen and (max-height: 660px) {
+  body:not(.isbeta) .mission-track {
+    min-height: 0 !important;
+  }
+}
+@media screen and (max-height: 499px) {
+  body:not(.isbeta) .jive-tooltip2-mid-padding.j-modal-content.clearfix.j-js-note-body,
+  body:not(.isbeta) .j-modal-content, body:not(.isbeta) div#jive-note-body {
+    padding-bottom: 0;
+    min-height: 0;
+  }
+  body:not(.isbeta) .mission-track .scroll-container {
+    max-height: 120px;
+    margin-bottom: 0;
+  }
+  body:not(.isbeta) .footer-container {
+    padding: 0;
+  }
+  body:not(.isbeta) .message-container {
+    margin-bottom: 10px;
+  }
+  body:not(.isbeta) .top-section, body:not(.isbeta) .j-user-profile {
+    border-bottom: 1px solid #ccc;
+  }
+  body:not(.isbeta) .bottom-wrapper {
+    max-height: 180px;
+    overflow: auto;
+  }
+  body:not(.isbeta) .bottom-wrapper .j-modal-buttons.clearfix,
+  body:not(.isbeta) .bottom-wrapper .text-center {
+    padding-bottom: 10px !important;
+  }
+}
+
+.jive-widget-topmembers.new-leaderboard {
+  clear: both;
+  width: 100%;
+}
+.jive-widget-topmembers.new-leaderboard .jive-widget-topmembers-member {
+  width: 15.33%;
+  margin-right: 1.6%;
+}
+.jive-widget-topmembers.new-leaderboard .jive-widget-topmembers-member:last-child {
+  margin-right: 0px;
+}
+.jive-widget-topmembers.new-leaderboard .jive-username-link {
+  font-weight: bold;
+}
+
+.top-members-wrapper .jiveTT-hover-user {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.content-large .tooltipDiv {
+  position: relative;
+}
+
+img#tooltip-icon {
+  width: 15px;
+  height: auto;
+  position: relative;
+  top: 2px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#tips-container {
+  font-size: 12px;
+  position: absolute !important;
+  top: -113px !important;
+  left: 105px !important;
+  margin: 0 !important;
+  padding: 15px;
+  border-width: 15px;
+  box-sizing: border-box;
+  background: white;
+  width: 375px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+#tips-container::after {
+  content: "";
+  position: absolute;
+  width: 0 !important;
+  height: 0;
+  bottom: -1.3em;
+  left: 10%;
+  /* border-width: 7px; */
+  box-sizing: border-box;
+  border: 8px solid black;
+  border-color: transparent transparent #FFF #FFF;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.jive-widget.jive-box.j-rc5.jive-widget-leaderboardwidget {
+  overflow: visible;
+  z-index: auto !important;
+}
+
+.jive-widget-container-small .jive-widget-leaderboardwidget span.jive-widget-topmembers-member {
+  display: block;
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.jive-widget-container-small .jive-widget-leaderboardwidget span.jive-widget-topmembers-member .jive-profile-photo {
+  float: left;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #ccc;
+}
+.jive-widget-container-small .jive-widget-leaderboardwidget span.jive-widget-topmembers-member .j-profile-photo-wrap {
+  width: 100%;
+  background: none;
+  height: 28px;
+  box-shadow: none;
+}
+.jive-widget-container-small .jive-widget-leaderboardwidget span.jive-widget-topmembers-member .j-status-levels {
+  float: right;
+  position: relative;
+}
+.jive-widget-container-small .jive-widget-leaderboardwidget span.jive-widget-topmembers-member .jive-username-link {
+  position: absolute;
+  top: 4px;
+  left: 33px;
+  width: 150px;
+  font-weight: normal;
+}
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial {
+  position: relative;
+  border-radius: 50%;
+}
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .knockout {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-top: 2px;
+  text-align: center;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+.progress-radial.mission-image-container.expertise-tile .knockout {
+  margin: 0px;
+}
+
+.mission-image-container {
+  display: block;
+  width: 70px;
+  height: 60px;
+  margin: 5px auto 34px;
+}
+
+.useProgressbar > .progress-radial {
+  background-image: none;
+  margin-bottom: 0px;
+}
+
+.status-level {
+  display: block;
+  border-radius: 4px;
+  height: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.status-level.title-level {
+  display: block;
+  margin: 12px auto 30px;
+  height: 4px;
+  width: 140px;
+}
+.status-level.title-level .dashes,
+.status-level.title-level .progress-dashes {
+  background-size: 14px 6px;
+  height: 5px;
+}
+.status-level.sml {
+  display: block;
+  height: 2px;
+  width: 90px;
+  margin-left: 39px;
+  margin-top: 7px;
+}
+.status-level.sml .dashes,
+.status-level.sml .progress-dashes {
+  background-size: 9px 4px;
+}
+.status-level .dashes,
+.status-level .progress-dashes {
+  background-position: left;
+  background-size: 8px 7px;
+  background-repeat: repeat-x;
+  width: 102%;
+  height: 4px;
+  margin-left: 0px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.status-level .progress-dashes {
+  background-image: linear-gradient(to right, #dddddd 83%, rgba(255, 255, 255, 0) 0%);
+  z-index: 1;
+  width: 102%;
+}
+.status-level .dashes {
+  background-image: linear-gradient(to right, #5697e3 83%, rgba(255, 255, 255, 0) 0%);
+  z-index: 2;
+  width: 0%;
+}
+.status-level .dashes.level1, .status-level .dashes.level-1 {
+  width: 10%;
+}
+.status-level .dashes.level2, .status-level .dashes.level-2 {
+  width: 20%;
+}
+.status-level .dashes.level3, .status-level .dashes.level-3 {
+  width: 30%;
+}
+.status-level .dashes.level4, .status-level .dashes.level-4 {
+  width: 40%;
+}
+.status-level .dashes.level5, .status-level .dashes.level-5 {
+  width: 50%;
+}
+.status-level .dashes.level6, .status-level .dashes.level-6 {
+  width: 60%;
+}
+.status-level .dashes.level7, .status-level .dashes.level-7 {
+  width: 70%;
+}
+.status-level .dashes.level8, .status-level .dashes.level-8 {
+  width: 80%;
+}
+.status-level .dashes.level9, .status-level .dashes.level-9 {
+  width: 90%;
+}
+.status-level .dashes.level10, .status-level .dashes.level-10 {
+  width: 102%;
+}
+
+.j-post-avatar .j-status-level .status-level {
+  height: 2.5px;
+  width: 70px;
+  margin-top: 5px;
+}
+.j-post-avatar .j-status-level .status-level .dashes,
+.j-post-avatar .j-status-level .status-level .progress-dashes {
+  background-size: 7px 4px;
+}
+.j-post-avatar .j-status-level .status-name {
+  display: none;
+}
+
+.j-byline .j-status-level {
+  color: #666;
+}
+.j-byline .j-status-level .status-wrapper {
+  position: relative;
+  width: 100px;
+  left: -6px;
+}
+.j-byline .j-status-level .status-wrapper .status-label {
+  position: absolute;
+  top: -3px;
+  display: inline-block;
+  margin-left: 8px;
+}
+.j-byline .j-status-level .status-wrapper .status-level {
+  position: absolute;
+  top: 23px;
+  margin-left: 39px;
+  height: 2.5px;
+  width: 70px;
+}
+.j-byline .j-status-level .status-wrapper .status-level .status-image {
+  float: left;
+}
+.j-byline .j-status-level .status-wrapper .status-level .dashes,
+.j-byline .j-status-level .status-wrapper .status-level .progress-dashes {
+  background-size: 7px 4px;
+  margin-left: 8px;
+}
+
+.progress-bar {
+  max-width: 140px;
+  height: 15px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress-bar .progress-item {
+  display: inline-block;
+  width: 9%;
+  margin-right: 1%;
+  background: #666;
+}
+
+.task-target .progress-radial {
+  width: 32px;
+  height: 32px;
+  margin-top: 3px;
+}
+.task-target .progress-radial.criteria-select {
+  opacity: 0;
+}
+.task-target .progress-radial.criteria-select.vis {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.task-target .progress-radial .knockout {
+  height: 28px;
+  width: 28px;
+}
+.task-target .progress-radial .knockout img {
+  top: 1px;
+  position: absolute;
+  left: 0;
+}
+.task-target .progress-radial .knockout .times {
+  line-height: 1.2em;
+  top: 6px;
+  left: 0;
+  font-size: 13px;
+  color: #999;
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* -------------------------------------
+ * Mixin for progress-% class
+ * ------------------------------------- */
+.progress-0 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(90deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-1, .progress-2, .progress-3, .progress-4, .progress-5 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(108deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-6, .progress-7, .progress-8, .progress-9, .progress-10 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-11, .progress-12, .progress-13, .progress-14, .progress-15 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-16, .progress-17, .progress-18, .progress-19, .progress-20 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-21, .progress-22, .progress-23, .progress-24, .progress-25 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-26, .progress-27, .progress-28, .progress-29, .progress-30 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-31, .progress-33, .progress-32, .progress-34 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(210deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-35 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-36, .progress-37, .progress-38, .progress-39, .progress-40 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-41, .progress-42, .progress-43, .progress-44, .progress-45 {
+  background-image: linear-gradient(90deg, #dedede 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-46, .progress-47, .progress-48, .progress-49, .progress-50 {
+  background-image: linear-gradient(-90deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-51, .progress-52, .progress-53, .progress-54, .progress-55 {
+  background-image: linear-gradient(-72deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-56, .progress-57, .progress-58, .progress-59, .progress-60 {
+  background-image: linear-gradient(-54deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-61, .progress-62, .progress-63, .progress-64, .progress-65 {
+  background-image: linear-gradient(-36deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-66, .progress-67 {
+  background-image: linear-gradient(-33deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-68, .progress-69, .progress-70 {
+  background-image: linear-gradient(-18deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-71, .progress-72, .progress-73, .progress-74, .progress-75 {
+  background-image: linear-gradient(0deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-76, .progress-77, .progress-78, .progress-79, .progress-80 {
+  background-image: linear-gradient(18deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-81, .progress-82, .progress-83, .progress-84, .progress-85 {
+  background-image: linear-gradient(36deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-86, .progress-87, .progress-88, .progress-89, .progress-90 {
+  background-image: linear-gradient(54deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-91, .progress-92, .progress-93, .progress-94, .progress-95, .progress-96, .progress-97, .progress-98, .progress-99 {
+  background-image: linear-gradient(72deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.progress-100 {
+  background-image: linear-gradient(90deg, #4d92df 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #4d92df 50%, #dedede 50%, #dedede);
+}
+
+.cards {
+  background: #fff;
+}
+
+.mission-track {
+  min-height: 450px;
+}
+.mission-track .message-container p {
+  font-size: 16px;
+}
+.mission-track .footer-container {
+  color: #000;
+}
+.mission-track .footer-container > p {
+  color: #777777;
+  padding: 12px 0 5px 0;
+}
+.mission-track .footer-container hr {
+  padding-bottom: 5px;
+}
+.mission-track .footer-container span {
+  padding-top: 0px;
+  display: block;
+}
+.mission-track .mission-image {
+  margin: 12px auto;
+  float: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.mission-track .mission-image img {
+  width: 100%;
+  height: auto;
+}
+.mission-track .mission-image svg {
+  width: 100%;
+  height: auto;
+}
+.mission-track .progress-radial .mission-image {
+  width: 55px;
+  height: 55px;
+}
+.mission-track h2, .mission-track h3, .mission-track p {
+  text-align: center;
+  color: #111111;
+}
+.mission-track h2 {
+  text-shadow: none;
+  font-size: 21px;
+  font-weight: normal;
+  padding: 0px;
+  min-height: none;
+}
+.mission-track h3 {
+  font-size: 12px;
+  margin: 13px 0 20px;
+  line-height: 1.5em;
+}
+.mission-track hr {
+  height: 1px;
+  clear: both;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: 1px solid #e1e1e1;
+  margin: 10px 0 8px 0;
+}
+.mission-track .message-container {
+  margin: 0 5px 20px;
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+.mission-track .progress-image {
+  position: absolute;
+}
+.mission-track .progress-track {
+  margin: 20px auto 0;
+  display: block;
+}
+.mission-track .progress-ratio {
+  font-size: 1.4em;
+  text-align: center;
+}
+.mission-track .scroll-container {
+  overflow: auto;
+  width: 100%;
+  max-height: 200px;
+  margin-left: 10px;
+}
+.mission-track .scroll-container .status-container {
+  cursor: default;
+  padding: 0;
+  width: 95%;
+  height: 40px;
+  min-height: 35px;
+  display: table;
+  color: #111111;
+}
+.mission-track .scroll-container .status-container .name {
+  line-height: 1.3em;
+  font-size: 13px;
+}
+.mission-track .scroll-container .status-container .details {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+.mission-track .scroll-container .status-container .status-image {
+  margin-right: 15px;
+}
+.mission-track .scroll-container .status-container.inprogress .name {
+  color: #999;
+}
+
+.j-thread-post > header .j-post-avatar .jive-avatar {
+  display: block;
+}
+
+.j-profile-extended-data td {
+  font-weight: normal !important;
+}
+
+.modal-container .j-modal-content {
+  display: inline-block !important;
+}
+
+li.status-tile.expertise-tile {
+  margin-bottom: 15px;
+}
+
+.listTypeNone {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.listTypeliNone {
+  list-style-type: none;
+}
+
+.popuplistspace {
+  margin-right: 8px;
+}
+
+.pop-up-tabindex-border:focus {
+  -moz-box-shadow: 0 0 0px 0px #59b1f6, 0 0 0 2px #59b1f6;
+  -webkit-box-shadow: 0 0 0px 0px #59b1f6, 0 0 0 2px #59b1f6;
+  box-shadow: 0 0 0px 0px #59b1f6, 0 0 0 2px #59b1f6;
+}
+
+.notification-wrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+}
+.notification-wrapper .notification-container {
+  background-color: #fff;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.notification-wrapper .notification-container img.badge {
+  width: 50px;
+  height: auto;
+  margin: 25px auto 10px;
+}
+.notification-wrapper .notification-container h3 {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.notification-wrapper .notification-container p.msg {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  margin-top: -5px;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  padding: 0 30px;
+  top: 10px;
+}
+.notification-wrapper .notification-container p.msg a:hover {
+  color: #cccccc;
+}
+
+/*Responsive Design*/
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .notification-container {
+    width: 100%;
+  }
+}
+#jive-alert-global {
+  border: 1px solid #DEDEDE;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  background-color: #FFFFEF;
+}
+#jive-alert-global .jive-alert-type {
+  padding: 20px;
+}
+#jive-alert-global .announcement-lh {
+  line-height: 1.8em;
+}
+
+.alertContainer {
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid #DEDEDE;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  height: 70px;
+  background-color: #FFFFEF;
+}
+.alertContainer .alertMessage {
+  width: 85%;
+  float: left;
+  margin: 21px 0 0 44px;
+}
+.alertContainer .alertMessage p {
+  padding-top: 5px;
+  font-size: 14px;
+}
+.alertContainer .close-me {
+  left: 15px;
+}
+
+.profile-status-container {
+  margin-right: 410px;
+}
+.profile-status-container h3 {
+  display: block;
+  margin-bottom: 20px;
+}
+.profile-status-container > a {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.profile-status-container .status-tile {
+  width: 16%;
+  padding: 0 1%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.profile-status-container .status-tile > a {
+  display: block;
+  cursor: pointer;
+}
+.profile-status-container .status-tile > a:hover, .profile-status-container .status-tile > a:focus {
+  text-decoration: none;
+}
+.profile-status-container .status-tile > a:hover span.status-label, .profile-status-container .status-tile > a:focus span.status-label {
+  color: #0088cc;
+  text-decoration: underline;
+}
+.profile-status-container .status-tile .status-image {
+  display: block;
+  width: 100%;
+  max-width: 50px;
+  margin: 0 auto 10px;
+  height: 50px;
+  float: none;
+}
+.profile-status-container .status-tile .status-image img {
+  width: 50px;
+  height: auto;
+}
+.profile-status-container .status-tile .status-image svg {
+  width: 100% !important;
+  height: 100%;
+}
+.profile-status-container .status-tile .status-label {
+  display: block;
+  color: #000;
+  line-height: 1.3636;
+  white-space: normal;
+  padding-bottom: 5px;
+  margin-left: -1px;
+}
+.profile-status-container .status-tile .status-level {
+  color: #777777;
+  font-size: 10px;
+  margin-left: 4px;
+}
+.profile-status-container .learn-more {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Remove after isBeta User release is finished. */
+.shownonbeta {
+  display: none;
+}
+
+.isbeta .j-pop.js-pop.popover {
+  margin-top: -10px !important;
+}
+.isbeta .modal-container .j-modal-content {
+  min-height: 0;
+  height: auto;
+  width: auto !important;
+}
+.isbeta .shownonbeta {
+  display: inline-block;
+}
+.isbeta .showisbeta {
+  display: none;
+}
+.isbeta #j-satNav-menu {
+  padding: 12px;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0;
+}
+.isbeta #j-satNav-menu .j-satellite-links {
+  padding: 0 !important;
+  border-top: none;
+  width: auto;
+  min-width: 200px;
+}
+.isbeta #j-satNav-menu .close-modal {
+  display: none;
+}
+.isbeta #j-satNav-menu .sansbeta {
+  display: block;
+}
+.isbeta #j-satNav-menu .j-user-profile {
+  min-width: 185px;
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.isbeta #j-satNav-menu .j-user-profile .j-user-photo {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: auto;
+  height: 115px;
+  overflow: visible;
+}
+.isbeta #j-satNav-menu .j-user-profile .j-user-photo > img {
+  width: 158px;
+  border: 1px solid #d8d8d8;
+}
+.isbeta #j-satNav-menu .j-user-profile .beta-img {
+  display: none;
+}
+.isbeta #j-satNav-menu .j-user-profile .j-profile-img-text {
+  left: 0px;
+  top: 80px;
+  width: 170px;
+}
+.isbeta #j-satNav-menu .j-user-profile .j-other-info .j-status-levels .level-points span {
+  display: inherit;
+}
+.isbeta #j-satNav-menu .j-user-profile .j-other-info span {
+  line-height: 2em;
+}
+.isbeta #j-satNav-menu .j-menu li {
+  display: block;
+  margin-bottom: 0px;
+}
+.isbeta #j-satNav-menu .j-menu li a {
+  padding: 3px 0 5px;
+  border-left: none !important;
+  font-size: 12px;
+}
+.isbeta #j-satNav-menu .modal-container .j-modal-content {
+  display: block;
+  min-height: 0;
+}
+.isbeta #j-satNav-menu .modal-container .j-modal-content section.j-user-profile {
+  text-align: center;
+}
+.isbeta #j-satNav-menu .modal-container .j-modal-content section.j-user-profile > img {
+  border: 1px solid #ccc;
+}
+.isbeta #j-satNav-menu .modal-container .j-modal-content section.j-user-profile ul {
+  text-align: left;
+}
+.isbeta .bottom-wrapper {
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+.isbeta .bottom-wrapper .j-modal-buttons.clearfix {
+  width: 330px;
+}
+.isbeta .bottom-wrapper .text-center {
+  display: none;
+}
+.isbeta .bottom-wrapper ul li a {
+  border: none;
+  font-weight: bold !important;
+}
+.isbeta .jive-tooltip2 {
+  width: 325px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user {
+  width: 360px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user h5 {
+  text-align: left;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content {
+  min-height: 0;
+  width: 288px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content .j-modal-buttons {
+  margin: 5px 0;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content .j-mini-modal-header {
+  margin-left: 85px;
+  margin-bottom: 0px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content .j-mini-modal-header .j-profile-photo-wrap {
+  float: left;
+  margin: 0px 0 0 -85px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content .j-mini-modal-header p {
+  text-align: left;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content table {
+  margin: 0px 0 25px 85px;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user .j-modal-content table td:first-child {
+  text-align: left;
+}
+.isbeta .jive-tooltip2 .j-mini-modal-user table.clearfix {
+  border-bottom: none;
+}
+.isbeta .modal-container {
+  width: auto;
+}
+.isbeta div#jive-note-body {
+  width: auto;
+}
+.isbeta .betatarget {
+  display: none;
+}
+.isbeta .j-modal-buttons .j-social-button.j-view-profile {
+  display: none;
+}
+.isbeta.j-thread .j-post-avatar .level-points > span {
+  display: block;
+}
+
+.sansBeta .modal-container .j-modal-content {
+  min-height: 0;
+}
+.sansBeta .modal-container .j-modal-content .j-modal-buttons {
+  margin: 25px 0 0;
+}
+.sansBeta .modal-container .j-modal-content .bottom-wrapper {
+  padding-bottom: 15px;
+}

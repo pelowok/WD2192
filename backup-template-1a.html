@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
     <!-- BEGIN TypeKit -->
     <script src="https://use.typekit.net/pcv5rqq.js"></script>
@@ -29,12 +26,14 @@
     <meta class="mktoString" id="varJquery" mktoName="jQuery javascript URL" default="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" allowHtml="true"/>
     <meta class="mktoString" id="varOptimizelyScript" mktoName="Optimizely javascript URL" default="https://cdn.optimizely.com/js/176158810.js" allowHtml="true"/>
     <meta class="mktoString" id="varRumMonitisScript" mktoName="rum.monitis javascript URL" default="https://rum.monitis.com/get/jsbenchmark.min.js?id=5006" allowHtml="true"/>
+    <meta class="mktoString" id="varMagnificPopupScript" mktoName="magnific-popup jQuery javascript URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/jquery.magnific-popup.min.js" allowHtml="true"/>
 
     <meta class="mktoString" id="varBootstrapCSS" mktoName="BootStrap CSS URL" default="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" allowHtml="true"/>
     <meta class="mktoString" id="varStylesheet1" mktoName="Stylesheet #1 URL" default="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" allowHtml="true"/>
-    <meta class="mktoString" id="varStylesheet2" mktoName="Stylesheet #2 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1b-general.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet2" mktoName="Stylesheet #2 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/backup-template-1a-general.css" allowHtml="true"/>
     <meta class="mktoString" id="varStylesheet3" mktoName="Stylesheet #3 URL" default="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic|Oswald:400,300,700" allowHtml="true"/>
-    <meta class="mktoString" id="varStylesheet4" mktoName="Stylesheet #4 URL" default="" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet4" mktoName="Stylesheet #4 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/backup-template-1a-style.css" allowHtml="true"/>
+    <meta class="mktoString" id="varStylesheet5" mktoName="Stylesheet #5 URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/magnific-popup.css" allowHtml="true"/>
 
     <meta class="mktoString" id="varInlineStyling" mktoName="Additional inline styling (use script tags)" default="" allowHtml="true"/>
 
@@ -47,7 +46,7 @@
     <meta class="mktoString" id="varContactInfoCountryName2" mktoName="Contact country name 2" default="UK" allowHtml="true"/>
     <meta class="mktoString" id="varContactInfoCountryPhone2" mktoName="Contact country phone 2" default="+44 (0) 1382 309040" allowHtml="true"/>
 
-    <meta class="mktoString" id="varHeroImage1" mktoName="Hero #1 image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/campaign_rm_ppc_devices.jpg" allowHtml="true"/>
+    <meta class="mktoString" id="varHeroImage1" mktoName="Hero #1 image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/backup_blank_en_server-1.jpg" allowHtml="true"/>
     <meta class="mktoString" id="varHeroHeader1" mktoName="Hero #1 header" default="24/7 Remote Network Monitoring and Management: " allowHtml="true"/>
     <meta class="mktoString" id="varHeroCopy1" mktoName="Hero #1 copy" default="MAX RemoteManagement provides Remote Network Monitoring software used by 10,000+ IT Support Companies, Consultants and MSPs worldwide." allowHtml="true"/>
 
@@ -63,9 +62,12 @@
     <meta class="mktoString" id="varTitlePoint4" mktoName="Point #4 title" default="Pay-as-you-go. No contracts." allowHtml="true"/>
     <meta class="mktoString" id="varCopyPoint4" mktoName="Point #4 copy" default="" allowHtml="true"/>
 
+    <meta class="mktoString" id="varMiddleColumnHTML" mktoName="Middle Column HTML goes here" default="" allowHtml="true"/>
+
     <meta class="mktoString" id="varAwardsImage" mktoName="Awards image URL" default="http://pages.logicnow.com/rs/356-UVH-403/images/rm_v7_awards.jpg" allowHtml="true"/>
 
-    <meta class="mktoString" id="varFormHeader" mktoName="Form header copy" default="Get your FREE 30-day Full Feature Trial" allowHtml="true"/>
+    <meta class="mktoString" id="varFormHeader" mktoName="Form header copy" default="Get your FREE 30-day trial:" allowHtml="true"/>
+    <meta class="mktoString" id="varFormHeaderBackgroundStyle" mktoName="Form header styling" default="background:#666;" allowHtml="true"/>
     <meta class="mktoString" id="varFormFooter" mktoName="Form footer copy" default="Join thousands of MSPs and IT support companies already thriving with LogicNow." allowHtml="true"/>
 
     <meta class="mktoString" id="varFooterLogo" mktoName="Page footer logo" default="http://pages.logicnow.com/rs/356-UVH-403/images/footer_logo.png" allowHtml="true"/>
@@ -74,14 +76,15 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src=${varJquery}></script>
 
-    <!--page-specific script --><!--<script type="text/javascript" src="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1.js"></script>-->
-    <!--<script type="text/javascript" src=${varPageSpecificScript></script>-->
+    <!--page-specific script --><!--<script type="text/javascript" src="http://pages.logicnow.com/rs/356-UVH-403/images/rm-msp-template-1.js"></script>--><!--<script type="text/javascript" src=${varPageSpecificScript></script>-->
 
     <!--optimizely-->
     <script src=${varOptimizelyScript}></script>
     <!--rummonitis-->
     <script src=${varRumMonitisScript} type='text/javascript' async='async'></script>
 
+    <!-- video magnific-pop-up jQuery -->
+    <script src=${varMagnificPopupScript} type='text/javascript' async='async'></script>
 
     <!-- Bootstrap -->
     <link href=${varBootstrapCSS} rel="stylesheet">
@@ -90,8 +93,10 @@
     <link rel="stylesheet" href=${varStylesheet1}/>
 
     <!-- Basic Styles -->
-    <link href=${varStylesheet2} rel="stylesheet"/>
+    <link href=${varStylesheet2} rel="stylesheet" type="text/css"/>
     <link href=${varStylesheet3} rel="stylesheet" type="text/css"/>
+    <link href=${varStylesheet4} rel="stylesheet" type="text/css"/>
+    <link href=${varStylesheet5} rel="stylesheet" type="text/css"/>
 
     <!--PAGE DATA-->
     <title>${varPageTitle}</title>
@@ -196,7 +201,7 @@
             width: 260px;
         }
 
-        a img {
+        #lnLogo {
             height: 84px;
         }
 
@@ -209,9 +214,9 @@
         }
 
         .mktoForm button[type=submit], .mktoForm input[type=submit] {
-            background: url(http://pages.logicnow.com/rs/356-UVH-403/images/altbtn.png) !important;
-            width: 275px !important;
-            height: 98px !important;
+            background: url(http://pages.logicnow.com/rs/356-UVH-403/images/altbtn2.png) !important;
+            width: 276px !important;
+            height: 68px !important;
             padding: 0 auto !important;
             margin: 0 auto !important;
             border: none !important;
@@ -225,7 +230,120 @@
             padding-bottom: 0 !important;
         }
     </style>
+    <style>
+        .ppc_header_title {
+            top: 90px;
+        }
 
+        #header {
+            position: relative;
+        }
+
+        .notice_banner {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #666666;
+            position: absolute;
+            right: 65px;
+            top: 75px;
+            font-style: italic;
+        }
+
+        .nojscript {
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            background-color: red;
+        }
+
+        label {
+            color: white;
+        }
+
+        a {
+            color: #027bc2;
+        }
+
+        .submit:hover {
+            cursor: pointer;
+            background-color: #cf8221;
+        }
+
+        .logo div {
+            margin: 0px !important;
+        }
+
+        .ppc_header_title {
+            margin: 0px !important;
+        }
+
+        h2 {
+            font-weight: normal;
+            margin: 0px !important;
+            font-size: 1em;
+        }
+
+        #content #rightcolumn h4 {
+            padding: 0 0 0px 0 !important;
+            color: #fff;
+            font-size: 1.4em;
+            text-align: center;
+            font-weight: normal;
+            margin: 0 0 0px 0;
+            width: 330px !important;
+        }
+
+        #content #rightcolumn h4 span {
+            background: #666;
+            display: block;
+            padding: 25px 13px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .TandC {
+            width: 272px;
+            margin: 0px auto;
+            margin-top: 25px;
+        }
+
+        #imgHead {
+            background-color: #82d5f7;
+        }
+
+        #middlecolumn p{
+            margin: 16px 0;
+        }
+    </style>
+    <style>
+
+        .mfp-fade.mfp-bg {
+            opacity: 0;
+            -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            transition: all 0.15s ease-out;
+        }
+        .mfp-fade.mfp-bg.mfp-ready {
+            opacity: 0.8;
+        }
+        .mfp-fade.mfp-bg.mfp-removing {
+            opacity: 0;
+        }
+
+        .mfp-fade.mfp-wrap .mfp-content {
+            opacity: 0;
+            -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            transition: all 0.15s ease-out;
+        }
+        .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+            opacity: 1;
+        }
+        .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+            opacity: 0;
+        }
+    </style>
     ${varInlineStyling}
 
 </head>
@@ -251,7 +369,7 @@
         <div class="logo">
             <h1 style="height:90px;">
                 <a href=${varHomeURL}>
-                    <img src=${varLogoImage} alt="MAX Remote Management">
+                    <img id="lnLogo" src=${varLogoImage} alt="MAX Remote Management">
                 </a>
             </h1>
         </div>
@@ -260,11 +378,17 @@
             <div id="lockIcon"></div>
             Trusted by over 11,000 MSPs and IT Support companies
         </div>
+
     </div>
 
     <div id="imgHead">
         <div id="theImage">
             <img src=${varHeroImage1} alt="hubspot_ppc-banners_asset_text.jpg">
+
+            <h1 class="ppc_header_title">
+                ${varHeroHeader1}<br>${varHeroCopy1}
+            </h1>
+
         </div>
     </div>
 
@@ -273,7 +397,7 @@
 
         <div id="rightcolumn">
 
-            <h2><span>Get your FREE 30-day <br> Full Feature Trial</span></h2>
+            <h2><span style=${varFormHeaderBackgroundStyle}>${varFormHeader}</span></h2>
 
             <div class="form alternate-submit-1">
                 <div id="form">
@@ -292,141 +416,38 @@
         </div>
 
         <div id="leftcolumn">
-
-            <div class="lcWhiteBox">
-                <div class="boxTitle">Everything you need in a single dashboard:</div>
-                <div class="boxText">
-                    <ul style="padding-left:20px">
-                        <li>Proactive remote monitoring
-                        </li>
-                        <li>Remote access, support and background management
-                        </li>
-                        <li>Proactive automated maintenance
-                        </li>
-                        <li>Workstation management
-                        </li>
-                        <li>Managed Online Backup
-                        </li>
-                        <li>Managed Antivirus
-                        </li>
-                        <li>Mobile Device Management
-                        </li>
-                        <li>ServiceDesk
-                        </li>
-                        <li>App Control
-                        </li>
-                        <li>Patch management
-                        </li>
-                        <li>Integration with PSA and other MSP systems
-                        </li>
-                        <li>Asset tracking
-                        </li>
-                        <li>Alerting and viewing
-                        </li>
-                        <li>Systems reporting
-                        </li>
-                        <li>Pre-packaged services
-                        </li>
-                    </ul>
-
-
-                </div>
+            <!-- Now MAXfocus --><!-- Distributor branding -->
+            <span id="hs_cos_wrapper_logicnow_backup_v7_en_pdf_dr_as_a_service" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html" data-global-widget-id="1650601238">
+            <div class="videoBox">
+                <a href="http://trials.maxfocus.com/hs-fs/hub/120076/file-1876637428-pdf/max_extra/Backup/content/TC0039-v1.0-EN-MAX_Backup_Technical_Factsheet.pdf?t=1454066803110" target="_blank">
+                    <img src="http://trials.maxfocus.com/hs-fs/hub/120076/file-2413941731-jpg/max_extra/Backup/v7/en_disaster_recovery_as_a_service.jpg?t=1454066803110">
+                </a>
             </div>
+            </span>
 
-
+            <span id="hs_cos_wrapper_logicnow_backup_v7_en_video_backup_security" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html" data-global-widget-id="1650441284">
+            <div class="videoBox">
+                <a class="popup-youtube" href="http://fast.wistia.net/embed/iframe/ugwnvyinhq?popover=true">
+                    <img src="http://trials.maxfocus.com/hs-fs/hub/120076/file-2411620413-jpg/max_extra/Backup/v7/en_max_backup_security.jpg?t=1454066803110">
+                </a>
+            </div>
+            </span>
+            <span id="hs_cos_wrapper_logicnow_backup_v7_en_testy_jason_etheridge" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html" data-global-widget-id="1647510446">
+                <div class="testimonialBox">
+                    <div class="testimonialImg">
+                        <img src="//cdn2.hubspot.net/hub/120076/file-1963770176-jpg/max_extra/RM/V7/testimonials/jason_etheridge.jpg?t=1454066803110">
+                    </div>
+                    <div class="testimonialQuote">
+                        “With MAX Backup, we've reduced our internal costs significantly and we've been able to pass these savings on to customers.”
+                    </div>
+                    <div class="testimonialSource">
+                        Jason Etheridge<br>Logic Speak Inc.<br>USA
+                    </div>
+                </div>
+            </span>
         </div>
 
-        <div id="middlecolumn">
-
-
-            <div class="main_body">
-
-                <span class="bannerMainTitle">Managed IT Services Software</span>
-                <span class="bannerMainContent">...100% designed for MSPs &amp; IT Support guys just like you!</span>
-                <br><br>
-
-                <p></p>
-
-                <h3>How MAX RemoteManagement will help YOU:</h3>
-
-                <p></p>
-                <ul style="padding-left:20px">
-                    <li>
-                        <strong>Monitoring:</strong> Servers, workstations, exchange, network equipment and connectivity.
-                    </li>
-                    <li>
-                        <strong>Pro-active Maintainenance:</strong> Servers &amp; desktops. Automation, patching, restart services, etc.
-                    </li>
-                    <li>
-                        <strong>Remote Support:</strong> Servers &amp; desktops. Rapid user assistance and remote maintenance.
-                    </li>
-                    <li>
-                        <strong>Asset Tracking - Hardware, Software:</strong> Comprehensive reporting with electronic extract.
-                    </li>
-                    <li>
-                        <strong>Customer Reporting:</strong> Automatic reporting on faults, status. Daily, weekly, monthly.
-                    </li>
-                    <li>
-                        <strong>Alerting and Viewing:</strong> Single Web-based dashboard, NOC view, SMS, email &amp; mobile phone.
-                    </li>
-                    <li><strong>Fully brandable:</strong> All customer touch points can be branded.</li>
-                </ul>
-                <p></p>
-
-                <p>It's a pay as you use, hosted system with no initial hardware or software investment with no minimum quantities and no lock in. And best of all, its setup and delivering for your customers within minutes.
-                </p>
-
-                <h3>MAX RemoteManagement helps thousands of IT Support Companies, Consultants and MSPs:</h3>
-
-                <p></p>
-                <ul style="padding-left:20px">
-                    <li>Deliver awesome IT Support and increase uptime to customers</li>
-                    <li>Promote, develop and increase sales within their businesses</li>
-                    <li>Operate their businesses more profitably</li>
-                    <li>Reduce threats to their businesses</li>
-                </ul>
-                <p></p>
-
-                <p></p>
-
-
-            </div>
-
-
-            <div class="pointslist">
-                <div class="wrapper">
-                    <ul>
-                        <li class="pointone">
-                            <span class="icon"></span>
-
-                            <p>Comprehensive but<br>not complex</p>
-
-                        </li>
-                        <li class="pointtwo">
-                            <span class="icon"></span>
-
-                            <p>We help you grow<br>your business</p>
-
-                        </li>
-                        <li class="pointthree">
-                            <span class="icon"></span>
-
-                            <p>Up and running in<br>just 10 minutes</p>
-
-                        </li>
-                        <li class="pointfour">
-                            <span class="icon"></span>
-
-                            <p>Pay-as-you-go.<br>No contracts</p>
-
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </div>
+        ${varMiddleColumnHTML}
 
     </div>
 
@@ -454,10 +475,25 @@
     <div style="clear:both"></div>
 </div>
 
+<script src="http://pages.logicnow.com/rs/356-UVH-403/images/max-backup-trial-form.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!--form logic -->
 <script src="http://pages.logicnow.com/rs/356-UVH-403/images/max-rm-trial-form.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+</script>
 
 </body>
 </html>
